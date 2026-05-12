@@ -9,7 +9,6 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [dataForm, setDataForm] = useState({ email: "", password: "" });
-  const [showPass, setShowPass] = useState(false);
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
@@ -192,7 +191,7 @@ export default function Login() {
               </div>
               <input
                 name="password"
-                type={showPass ? "text" : "password"}
+                type="password"
                 onChange={handleChange}
                 className="auth-input"
                 placeholder="••••••••"

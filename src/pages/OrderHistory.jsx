@@ -6,6 +6,23 @@ import { useTheme } from "../context/ThemeContext";
 export default function OrderHistory() {
     const { isLight } = useTheme();
 
+    const getStatusColor = (status) => {
+        switch (status) {
+            case "Completed":
+                return isLight ? "bg-emerald-100 text-emerald-700" : "bg-green-500 text-white";
+            case "Pending":
+                return isLight ? "bg-sky-100 text-sky-700" : "bg-yellow-400 text-white";
+            case "Cancelled":
+                return isLight ? "bg-rose-100 text-rose-700" : "bg-red-500 text-white";
+            default:
+                return isLight ? "bg-slate-100 text-slate-700" : "bg-gray-400 text-white";
+        }
+    };
+
+    const formatDate = (date) => new Date(date).toLocaleDateString("id-ID");
+
+    const formatPrice = (price) => new Intl.NumberFormat("id-ID").format(price);
+
     return (
         <main className="space-y-6">
             <PageHeader title="Riwayat Order" breadcrumb={["Home", "Riwayat Order"]} />
@@ -26,9 +43,13 @@ export default function OrderHistory() {
                             <tr key={order.id} className={`border-t ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
                                 <td className={`px-5 py-4 ${isLight ? "text-slate-500" : "text-gray-400"}`}>{order.id}</td>
                                 <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>{order.customerName}</td>
-                                <td className="px-5 py-4">{order.orderDate}</td>
-                                <td className="px-5 py-4">Rp {new Intl.NumberFormat("id-ID").format(order.totalPrice)}</td>
-                                <td className="px-5 py-4">{order.status}</td>
+                                <td className="px-5 py-4">{formatDate(order.orderDate)}</td>
+                                <td className="px-5 py-4">Rp {formatPrice(order.totalPrice)}</td>
+                                <td className="px-5 py-4">
+                                    <span className={`${getStatusColor(order.status)} rounded-full px-3 py-1 text-xs font-medium`}>
+                                        {order.status}
+                                    </span>
+                                </td>
                             </tr>
                         ))}
                     </tbody>

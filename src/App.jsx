@@ -4,12 +4,13 @@ import "./assets/tailwind.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import Loading from "./components/Loading";
 
-
 function App() {
   // pages
   const Dashboard = React.lazy(() => import("./pages/Dashboard"));
   const Customers = React.lazy(() => import("./pages/Customers"));
+  const CustomersDetail = React.lazy(() => import("./pages/CustomersDetail"));
   const Orders = React.lazy(() => import("./pages/Orders"));
+  const OrdersDetail = React.lazy(() => import("./pages/OrdersDetail"));
   const LaundryBooking = React.lazy(() => import("./pages/LaundryBooking"));
   const Notifications = React.lazy(() => import("./pages/Notifications"));
   const OrderHistory = React.lazy(() => import("./pages/OrderHistory"));
@@ -26,7 +27,6 @@ function App() {
   const Register = React.lazy(() => import("./pages/auth/Register"));
   const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 
-
   return (
     <ThemeProvider>
       <Suspense fallback={<Loading />}>
@@ -34,7 +34,9 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/customers" element={<Customers />} />
+            <Route path="/customers/:id" element={<CustomersDetail />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/orders/:id" element={<OrdersDetail />} />
             <Route path="/laundry-booking" element={<LaundryBooking />} />
             <Route path="/tracking-status" element={<TrackingStatus />} />
             <Route path="/services-pricing" element={<ServicesPricing />} />

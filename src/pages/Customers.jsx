@@ -1,7 +1,8 @@
 import { useState } from "react";
-import customersData from "../assets/data/CustomersData";
+import customersData from "../assets/data/CustomersData.json";
 import PageHeader from "../components/PageHeader";
 import { useTheme } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 
 export default function Customers() {
   const { isLight } = useTheme();
@@ -171,7 +172,12 @@ export default function Customers() {
                 {customers.map((c) => (
                   <tr key={c.id} className={`border-t transition ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
                     <td className={`px-5 py-4 ${isLight ? "text-slate-500" : "text-gray-400"}`}>{c.id}</td>
-                    <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>{c.name}</td>
+                    <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>
+                      <Link to={`/customers/${c.id}`} className="hover:underline">
+                        {c.name}
+                      </Link>
+                    </td>
+
                     <td className="px-5 py-4">{c.email}</td>
                     <td className="px-5 py-4">{c.phone}</td>
                     <td className="px-5 py-4">
