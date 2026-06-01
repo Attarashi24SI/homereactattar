@@ -1,20 +1,12 @@
 import React from "react";
+import { Badge } from "./ui/badge";
 
-const baseClass = "inline-flex rounded-full px-3 py-1 text-xs font-medium";
-
-const statusTone = {
-    Completed: {
-        light: "bg-emerald-100 text-emerald-700",
-        dark: "bg-green-500 text-white",
-    },
-    Pending: {
-        light: "bg-sky-100 text-sky-700",
-        dark: "bg-yellow-400 text-white",
-    },
-    Cancelled: {
-        light: "bg-rose-100 text-rose-700",
-        dark: "bg-red-500 text-white",
-    },
+const statusVariant = {
+    Completed: "success",
+    Pending: "warning",
+    Cancelled: "destructive",
+    Paid: "success",
+    Unpaid: "warning",
 };
 
 const loyaltyTone = {
@@ -23,22 +15,17 @@ const loyaltyTone = {
     Bronze: "bg-orange-600 text-white",
 };
 
-export const StatusBadge = ({ status, isLight }) => {
-    const tone = statusTone[status] || {
-        light: "bg-slate-100 text-slate-700",
-        dark: "bg-gray-400 text-white",
-    };
-
+export const StatusBadge = ({ status }) => {
     return (
-        <span className={`${baseClass} ${isLight ? tone.light : tone.dark}`}>
+        <Badge variant={statusVariant[status] || "secondary"}>
             {status}
-        </span>
+        </Badge>
     );
 };
 
 export const LoyaltyBadge = ({ loyalty }) => {
     return (
-        <span className={`${baseClass} ${loyaltyTone[loyalty] || loyaltyTone.Silver}`}>
+        <span className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${loyaltyTone[loyalty] || loyaltyTone.Silver}`}>
             {loyalty}
         </span>
     );

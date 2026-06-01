@@ -1,16 +1,17 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
+import { Plus } from "lucide-react";
+import { Button } from "./ui/button";
 
-const AddButton = ({ children, onClick }) => {
-    const { isLight } = useTheme();
-
+const AddButton = ({ children, onClick, ...props }) => {
     return (
-        <button
+        <Button
             onClick={onClick}
-            className={`${isLight ? "bg-rose-400 hover:bg-rose-500" : "bg-emerald-500 hover:bg-emerald-600"} rounded-md px-4 py-2 text-white`}
+            className="bg-emerald-500 text-white hover:bg-emerald-600"
+            {...props}
         >
+            <Plus data-icon="inline-start" />
             {children}
-        </button>
+        </Button>
     );
 };
 

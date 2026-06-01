@@ -5,6 +5,14 @@ import customersData from "../assets/data/customer.json";
 import AddButton from "../components/AddButton";
 import OrderForm from "../components/OrderForm";
 import OrderTable from "../components/OrderTable";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../components/ui/dialog";
 
 const customerNameById = new Map(customersData.map((customer) => [customer.id, customer.fullName]));
 const initialOrders = ordersData.map((order) => ({
@@ -60,20 +68,28 @@ export default function Orders() {
     <main className="space-y-6">
       <PageHeader title="Orders" breadcrumb={["Home", "Orders"]} />
 
-      <div>
-        <AddButton onClick={() => setShowForm(true)}>+ Add Order</AddButton>
-      </div>
+      <Dialog open={showForm} onOpenChange={setShowForm}>
+        <DialogTrigger asChild>
+          <AddButton>Add Order</AddButton>
+        </DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Add New Order</DialogTitle>
+            <DialogDescription>
+              Isi data pelanggan, total transaksi, tanggal, dan status order.
+            </DialogDescription>
+          </DialogHeader>
+          <OrderForm
+            formData={formData}
+            onChange={handleInputChange}
+            onSubmit={handleAddOrder}
+            onCancel={() => setShowForm(false)}
+            compact
+          />
+        </DialogContent>
+      </Dialog>
 
-      {showForm && (
-        <OrderForm
-          formData={formData}
-          onChange={handleInputChange}
-          onSubmit={handleAddOrder}
-          onCancel={() => setShowForm(false)}
-        />
-      )}
-
-      <OrderTable orders={orders} compact={showForm} />
+      <OrderTable orders={orders} />
     </main>
   );
 }
