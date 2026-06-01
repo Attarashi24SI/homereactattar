@@ -1,13 +1,9 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
 import { useTheme } from "../context/ThemeContext";
+import services from "../Laporanp4/data/data.json";
 
-const services = [
-    { name: "Cuci Kering", unit: "Kg", price: "Rp 7.000" },
-    { name: "Cuci Setrika", unit: "Kg", price: "Rp 10.000" },
-    { name: "Express", unit: "Kg", price: "Rp 15.000" },
-    { name: "Karpet", unit: "Meter", price: "Rp 25.000" },
-];
+const formatPrice = (price) => new Intl.NumberFormat("id-ID").format(price * 1000);
 
 export default function ServicesPricing() {
     const { isLight } = useTheme();
@@ -28,18 +24,20 @@ export default function ServicesPricing() {
                         <thead className={`text-xs uppercase tracking-wide ${isLight ? "bg-white text-slate-400" : "bg-[#0f1724] text-gray-400"}`}>
                             <tr>
                                 <th className="px-5 py-4">Layanan</th>
-                                <th className="px-5 py-4">Unit</th>
+                                <th className="px-5 py-4">Kategori</th>
                                 <th className="px-5 py-4">Harga</th>
-                                <th className="px-5 py-4">Aksi</th>
+                                <th className="px-5 py-4">Rating</th>
+                                <th className="px-5 py-4">Penyedia</th>
                             </tr>
                         </thead>
                         <tbody>
                             {services.map((service) => (
-                                <tr key={service.name} className={`border-t ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
+                                <tr key={service.id} className={`border-t ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
                                     <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>{service.name}</td>
-                                    <td className="px-5 py-4">{service.unit}</td>
-                                    <td className="px-5 py-4">{service.price}</td>
-                                    <td className={`px-5 py-4 ${isLight ? "text-teal-600" : "text-emerald-300"}`}>Edit</td>
+                                    <td className="px-5 py-4">{service.category}</td>
+                                    <td className="px-5 py-4">Rp {formatPrice(service.price)}</td>
+                                    <td className="px-5 py-4">{service.rating}</td>
+                                    <td className="px-5 py-4">{service.provider?.name}</td>
                                 </tr>
                             ))}
                         </tbody>

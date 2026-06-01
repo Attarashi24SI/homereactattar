@@ -1,19 +1,26 @@
 import { useState } from "react";
 import PageHeader from "../components/PageHeader";
-import ordersData from "../assets/data/OrderData.json";
+import ordersData from "../assets/data/order.json";
+import customersData from "../assets/data/customer.json";
 import AddButton from "../components/AddButton";
 import OrderForm from "../components/OrderForm";
 import OrderTable from "../components/OrderTable";
 
+const customerNameById = new Map(customersData.map((customer) => [customer.id, customer.fullName]));
+const initialOrders = ordersData.map((order) => ({
+  ...order,
+  customerName: customerNameById.get(order.customerId),
+}));
+
 export default function Orders() {
-  const [orders, setOrders] = useState(ordersData);
+  const [orders, setOrders] = useState(initialOrders);
   const [showForm, setShowForm] = useState(false);
 
   const [formData, setFormData] = useState({
-    customerName: "",
+    customerId: "",
     status: "Pending",
-    totalPrice: "",
-    orderDate: "",
+    total: "",
+    date: "",
   });
 
   const handleInputChange = (e) => {
@@ -27,21 +34,22 @@ export default function Orders() {
   const handleAddOrder = (e) => {
     e.preventDefault();
 
-    if (formData.customerName && formData.totalPrice && formData.orderDate) {
+    if (formData.customerId && formData.total && formData.date) {
       setOrders([
         ...orders,
         {
-          id: Math.max(...orders.map((order) => Number(order.id)), 0) + 1,
+          orderId: `ORD${String(orders.length + 1).padStart(4, "0")}`,
           ...formData,
-          totalPrice: Number(formData.totalPrice),
+          customerName: customerNameById.get(formData.customerId) || formData.customerId,
+          total: Number(formData.total),
         },
       ]);
 
       setFormData({
-        customerName: "",
+        customerId: "",
         status: "Pending",
-        totalPrice: "",
-        orderDate: "",
+        total: "",
+        date: "",
       });
 
       setShowForm(false);

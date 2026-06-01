@@ -13,27 +13,27 @@ const OrderTable = ({ orders, compact }) => {
 
     return (
         <DataTable
-            columns={["Order ID", "Customer", "Date", "Total", "Status"]}
+            columns={["Order ID", "Pelanggan", "Tanggal", "Total", "Status"]}
             compact={compact}
         >
             {orders.map((order) => (
                 <tr
-                    key={order.id}
+                    key={order.orderId}
                     className={`border-t transition ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}
                 >
                     <td className={`px-5 py-4 ${isLight ? "text-slate-500" : "text-gray-400"}`}>
-                        {order.id}
+                        {order.orderId}
                     </td>
                     <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>
                         <Link
-                            to={`/orders/${order.id}`}
+                            to={`/orders/${order.orderId}`}
                             className="text-emerald-400 hover:text-emerald-500"
                         >
-                            {order.customerName}
+                            {order.customerName || order.customerId}
                         </Link>
                     </td>
-                    <td className="px-5 py-4">{formatDate(order.orderDate)}</td>
-                    <td className="px-5 py-4">Rp {formatPrice(order.totalPrice)}</td>
+                    <td className="px-5 py-4">{formatDate(order.date)}</td>
+                    <td className="px-5 py-4">Rp {formatPrice(order.total)}</td>
                     <td className="px-5 py-4">
                         <StatusBadge status={order.status} isLight={isLight} />
                     </td>

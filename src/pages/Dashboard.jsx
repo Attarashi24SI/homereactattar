@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-import ordersData from "../assets/data/OrderData.json";
+import ordersData from "../assets/data/order.json";
 import MetricCard from "../components/MetricCard";
 import { useTheme } from "../context/ThemeContext";
 
@@ -16,7 +16,7 @@ const getOrderSummary = () => {
     const pendingOrders = ordersData.filter((order) => order.status === "Pending");
     const cancelledOrders = ordersData.filter((order) => order.status === "Cancelled");
     const revenue = completedOrders.reduce(
-        (total, order) => total + order.totalPrice,
+        (total, order) => total + order.total,
         0,
     );
 
@@ -33,7 +33,7 @@ const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep
 
 const chartData = Object.values(
     ordersData.reduce((result, order) => {
-        const date = new Date(order.orderDate);
+        const date = new Date(order.date);
         const key = `${date.getFullYear()}-${date.getMonth()}`;
 
         if (!result[key]) {
@@ -48,7 +48,7 @@ const chartData = Object.values(
         result[key].orders += 1;
 
         if (order.status === "Completed") {
-            result[key].revenue += order.totalPrice;
+            result[key].revenue += order.total;
         }
 
         return result;

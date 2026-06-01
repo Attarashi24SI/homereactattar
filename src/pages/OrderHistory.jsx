@@ -1,7 +1,10 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-import ordersData from "../assets/data/OrderData.json";
+import ordersData from "../assets/data/order.json";
+import customersData from "../assets/data/customer.json";
 import { useTheme } from "../context/ThemeContext";
+
+const customerNameById = new Map(customersData.map((customer) => [customer.id, customer.fullName]));
 
 export default function OrderHistory() {
     const { isLight } = useTheme();
@@ -40,11 +43,11 @@ export default function OrderHistory() {
                     </thead>
                     <tbody>
                         {ordersData.map((order) => (
-                            <tr key={order.id} className={`border-t ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
-                                <td className={`px-5 py-4 ${isLight ? "text-slate-500" : "text-gray-400"}`}>{order.id}</td>
-                                <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>{order.customerName}</td>
-                                <td className="px-5 py-4">{formatDate(order.orderDate)}</td>
-                                <td className="px-5 py-4">Rp {formatPrice(order.totalPrice)}</td>
+                            <tr key={order.orderId} className={`border-t ${isLight ? "border-slate-100 hover:bg-white" : "border-white/5 hover:bg-white/5"}`}>
+                                <td className={`px-5 py-4 ${isLight ? "text-slate-500" : "text-gray-400"}`}>{order.orderId}</td>
+                                <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>{customerNameById.get(order.customerId) || order.customerId}</td>
+                                <td className="px-5 py-4">{formatDate(order.date)}</td>
+                                <td className="px-5 py-4">Rp {formatPrice(order.total)}</td>
                                 <td className="px-5 py-4">
                                     <span className={`${getStatusColor(order.status)} rounded-full px-3 py-1 text-xs font-medium`}>
                                         {order.status}

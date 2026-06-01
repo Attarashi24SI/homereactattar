@@ -10,24 +10,24 @@ const OrderForm = ({ formData, onChange, onSubmit, onCancel }) => {
             <form onSubmit={onSubmit} className="grid gap-3 md:grid-cols-4">
                 <FormInput
                     type="text"
-                    name="customerName"
-                    placeholder="Customer Name"
-                    value={formData.customerName}
+                    name="customerId"
+                    placeholder="Customer ID"
+                    value={formData.customerId}
                     onChange={onChange}
                     required
                 />
                 <FormInput
                     type="number"
-                    name="totalPrice"
-                    placeholder="Total Price"
-                    value={formData.totalPrice}
+                    name="total"
+                    placeholder="Total"
+                    value={formData.total}
                     onChange={onChange}
                     required
                 />
                 <FormInput
                     type="date"
-                    name="orderDate"
-                    value={formData.orderDate}
+                    name="date"
+                    value={formData.date}
                     onChange={onChange}
                     required
                 />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import customersData from "../assets/data/CustomersData.json";
+import customersData from "../assets/data/customer.json";
 import PageHeader from "../components/PageHeader";
 import AddButton from "../components/AddButton";
 import CustomerForm from "../components/CustomerForm";
@@ -10,10 +10,10 @@ export default function Customers() {
   const [showForm, setShowForm] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    loyalty: "Bronze",
+    fullName: "",
+    username: "",
+    gender: "L",
+    birthDate: "",
   });
 
   const handleInputChange = (e) => {
@@ -27,19 +27,19 @@ export default function Customers() {
   const handleAddCustomer = (e) => {
     e.preventDefault();
 
-    if (formData.name && formData.email && formData.phone) {
+    if (formData.fullName && formData.username && formData.birthDate) {
       const newCustomer = {
-        id: customers.length + 1,
+        id: `CUST${String(customers.length + 1).padStart(4, "0")}`,
         ...formData,
       };
 
       setCustomers([...customers, newCustomer]);
 
       setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        loyalty: "Bronze",
+        fullName: "",
+        username: "",
+        gender: "L",
+        birthDate: "",
       });
 
       setShowForm(false);

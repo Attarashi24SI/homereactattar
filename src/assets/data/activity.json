@@ -1,0 +1,7202 @@
+[
+  {
+    "activityId": "ACT0001",
+    "customerId": "CUST0001",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0002",
+    "customerId": "CUST0002",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0003",
+    "customerId": "CUST0003",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0004",
+    "customerId": "CUST0004",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0005",
+    "customerId": "CUST0005",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0006",
+    "customerId": "CUST0006",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0007",
+    "customerId": "CUST0007",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0008",
+    "customerId": "CUST0008",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0009",
+    "customerId": "CUST0009",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0010",
+    "customerId": "CUST0010",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0011",
+    "customerId": "CUST0011",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0012",
+    "customerId": "CUST0012",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0013",
+    "customerId": "CUST0013",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0014",
+    "customerId": "CUST0014",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0015",
+    "customerId": "CUST0015",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0016",
+    "customerId": "CUST0016",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0017",
+    "customerId": "CUST0017",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0018",
+    "customerId": "CUST0018",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0019",
+    "customerId": "CUST0019",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0020",
+    "customerId": "CUST0020",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0021",
+    "customerId": "CUST0021",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0022",
+    "customerId": "CUST0022",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0023",
+    "customerId": "CUST0023",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0024",
+    "customerId": "CUST0024",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0025",
+    "customerId": "CUST0025",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0026",
+    "customerId": "CUST0026",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0027",
+    "customerId": "CUST0027",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0028",
+    "customerId": "CUST0028",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0029",
+    "customerId": "CUST0029",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0030",
+    "customerId": "CUST0030",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0031",
+    "customerId": "CUST0031",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0032",
+    "customerId": "CUST0032",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0033",
+    "customerId": "CUST0033",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0034",
+    "customerId": "CUST0034",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0035",
+    "customerId": "CUST0035",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0036",
+    "customerId": "CUST0036",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0037",
+    "customerId": "CUST0037",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0038",
+    "customerId": "CUST0038",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0039",
+    "customerId": "CUST0039",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0040",
+    "customerId": "CUST0040",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0041",
+    "customerId": "CUST0041",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0042",
+    "customerId": "CUST0042",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0043",
+    "customerId": "CUST0043",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0044",
+    "customerId": "CUST0044",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0045",
+    "customerId": "CUST0045",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0046",
+    "customerId": "CUST0046",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0047",
+    "customerId": "CUST0047",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0048",
+    "customerId": "CUST0048",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0049",
+    "customerId": "CUST0049",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0050",
+    "customerId": "CUST0050",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0051",
+    "customerId": "CUST0051",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0052",
+    "customerId": "CUST0052",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0053",
+    "customerId": "CUST0053",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0054",
+    "customerId": "CUST0054",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0055",
+    "customerId": "CUST0055",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0056",
+    "customerId": "CUST0056",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0057",
+    "customerId": "CUST0057",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0058",
+    "customerId": "CUST0058",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0059",
+    "customerId": "CUST0059",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0060",
+    "customerId": "CUST0060",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0061",
+    "customerId": "CUST0061",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0062",
+    "customerId": "CUST0062",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0063",
+    "customerId": "CUST0063",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0064",
+    "customerId": "CUST0064",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0065",
+    "customerId": "CUST0065",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0066",
+    "customerId": "CUST0066",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0067",
+    "customerId": "CUST0067",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0068",
+    "customerId": "CUST0068",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0069",
+    "customerId": "CUST0069",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0070",
+    "customerId": "CUST0070",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0071",
+    "customerId": "CUST0071",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0072",
+    "customerId": "CUST0072",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0073",
+    "customerId": "CUST0073",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0074",
+    "customerId": "CUST0074",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0075",
+    "customerId": "CUST0075",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0076",
+    "customerId": "CUST0076",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0077",
+    "customerId": "CUST0077",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0078",
+    "customerId": "CUST0078",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0079",
+    "customerId": "CUST0079",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0080",
+    "customerId": "CUST0080",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0081",
+    "customerId": "CUST0081",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0082",
+    "customerId": "CUST0082",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0083",
+    "customerId": "CUST0083",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0084",
+    "customerId": "CUST0084",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0085",
+    "customerId": "CUST0085",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0086",
+    "customerId": "CUST0086",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0087",
+    "customerId": "CUST0087",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0088",
+    "customerId": "CUST0088",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0089",
+    "customerId": "CUST0089",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0090",
+    "customerId": "CUST0090",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0091",
+    "customerId": "CUST0091",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0092",
+    "customerId": "CUST0092",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0093",
+    "customerId": "CUST0093",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0094",
+    "customerId": "CUST0094",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0095",
+    "customerId": "CUST0095",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0096",
+    "customerId": "CUST0096",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0097",
+    "customerId": "CUST0097",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0098",
+    "customerId": "CUST0098",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0099",
+    "customerId": "CUST0099",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0100",
+    "customerId": "CUST0100",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0101",
+    "customerId": "CUST0101",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0102",
+    "customerId": "CUST0102",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0103",
+    "customerId": "CUST0103",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0104",
+    "customerId": "CUST0104",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0105",
+    "customerId": "CUST0105",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0106",
+    "customerId": "CUST0106",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0107",
+    "customerId": "CUST0107",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0108",
+    "customerId": "CUST0108",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0109",
+    "customerId": "CUST0109",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0110",
+    "customerId": "CUST0110",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0111",
+    "customerId": "CUST0111",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0112",
+    "customerId": "CUST0112",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0113",
+    "customerId": "CUST0113",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0114",
+    "customerId": "CUST0114",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0115",
+    "customerId": "CUST0115",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0116",
+    "customerId": "CUST0116",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0117",
+    "customerId": "CUST0117",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0118",
+    "customerId": "CUST0118",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0119",
+    "customerId": "CUST0119",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0120",
+    "customerId": "CUST0120",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0121",
+    "customerId": "CUST0121",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0122",
+    "customerId": "CUST0122",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0123",
+    "customerId": "CUST0123",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0124",
+    "customerId": "CUST0124",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0125",
+    "customerId": "CUST0125",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0126",
+    "customerId": "CUST0126",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0127",
+    "customerId": "CUST0127",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0128",
+    "customerId": "CUST0128",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0129",
+    "customerId": "CUST0129",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0130",
+    "customerId": "CUST0130",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0131",
+    "customerId": "CUST0131",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0132",
+    "customerId": "CUST0132",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0133",
+    "customerId": "CUST0133",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0134",
+    "customerId": "CUST0134",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0135",
+    "customerId": "CUST0135",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0136",
+    "customerId": "CUST0136",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0137",
+    "customerId": "CUST0137",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0138",
+    "customerId": "CUST0138",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0139",
+    "customerId": "CUST0139",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0140",
+    "customerId": "CUST0140",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0141",
+    "customerId": "CUST0141",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0142",
+    "customerId": "CUST0142",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0143",
+    "customerId": "CUST0143",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0144",
+    "customerId": "CUST0144",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0145",
+    "customerId": "CUST0145",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0146",
+    "customerId": "CUST0146",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0147",
+    "customerId": "CUST0147",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0148",
+    "customerId": "CUST0148",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0149",
+    "customerId": "CUST0149",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0150",
+    "customerId": "CUST0150",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0151",
+    "customerId": "CUST0151",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0152",
+    "customerId": "CUST0152",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0153",
+    "customerId": "CUST0153",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0154",
+    "customerId": "CUST0154",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0155",
+    "customerId": "CUST0155",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0156",
+    "customerId": "CUST0156",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0157",
+    "customerId": "CUST0157",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0158",
+    "customerId": "CUST0158",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0159",
+    "customerId": "CUST0159",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0160",
+    "customerId": "CUST0160",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0161",
+    "customerId": "CUST0161",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0162",
+    "customerId": "CUST0162",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0163",
+    "customerId": "CUST0163",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0164",
+    "customerId": "CUST0164",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0165",
+    "customerId": "CUST0165",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0166",
+    "customerId": "CUST0166",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0167",
+    "customerId": "CUST0167",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0168",
+    "customerId": "CUST0168",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0169",
+    "customerId": "CUST0169",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0170",
+    "customerId": "CUST0170",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0171",
+    "customerId": "CUST0171",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0172",
+    "customerId": "CUST0172",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0173",
+    "customerId": "CUST0173",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0174",
+    "customerId": "CUST0174",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0175",
+    "customerId": "CUST0175",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0176",
+    "customerId": "CUST0176",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0177",
+    "customerId": "CUST0177",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0178",
+    "customerId": "CUST0178",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0179",
+    "customerId": "CUST0179",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0180",
+    "customerId": "CUST0180",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0181",
+    "customerId": "CUST0181",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0182",
+    "customerId": "CUST0182",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0183",
+    "customerId": "CUST0183",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0184",
+    "customerId": "CUST0184",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0185",
+    "customerId": "CUST0185",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0186",
+    "customerId": "CUST0186",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0187",
+    "customerId": "CUST0187",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0188",
+    "customerId": "CUST0188",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0189",
+    "customerId": "CUST0189",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0190",
+    "customerId": "CUST0190",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0191",
+    "customerId": "CUST0191",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0192",
+    "customerId": "CUST0192",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0193",
+    "customerId": "CUST0193",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0194",
+    "customerId": "CUST0194",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0195",
+    "customerId": "CUST0195",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0196",
+    "customerId": "CUST0196",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0197",
+    "customerId": "CUST0197",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0198",
+    "customerId": "CUST0198",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0199",
+    "customerId": "CUST0199",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0200",
+    "customerId": "CUST0200",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0201",
+    "customerId": "CUST0201",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0202",
+    "customerId": "CUST0202",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0203",
+    "customerId": "CUST0203",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0204",
+    "customerId": "CUST0204",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0205",
+    "customerId": "CUST0205",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0206",
+    "customerId": "CUST0206",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0207",
+    "customerId": "CUST0207",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0208",
+    "customerId": "CUST0208",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0209",
+    "customerId": "CUST0209",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0210",
+    "customerId": "CUST0210",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0211",
+    "customerId": "CUST0211",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0212",
+    "customerId": "CUST0212",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0213",
+    "customerId": "CUST0213",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0214",
+    "customerId": "CUST0214",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0215",
+    "customerId": "CUST0215",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0216",
+    "customerId": "CUST0216",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0217",
+    "customerId": "CUST0217",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0218",
+    "customerId": "CUST0218",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0219",
+    "customerId": "CUST0219",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0220",
+    "customerId": "CUST0220",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0221",
+    "customerId": "CUST0221",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0222",
+    "customerId": "CUST0222",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0223",
+    "customerId": "CUST0223",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0224",
+    "customerId": "CUST0224",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0225",
+    "customerId": "CUST0225",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0226",
+    "customerId": "CUST0226",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0227",
+    "customerId": "CUST0227",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0228",
+    "customerId": "CUST0228",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0229",
+    "customerId": "CUST0229",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0230",
+    "customerId": "CUST0230",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0231",
+    "customerId": "CUST0231",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0232",
+    "customerId": "CUST0232",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0233",
+    "customerId": "CUST0233",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0234",
+    "customerId": "CUST0234",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0235",
+    "customerId": "CUST0235",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0236",
+    "customerId": "CUST0236",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0237",
+    "customerId": "CUST0237",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0238",
+    "customerId": "CUST0238",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0239",
+    "customerId": "CUST0239",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0240",
+    "customerId": "CUST0240",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0241",
+    "customerId": "CUST0241",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0242",
+    "customerId": "CUST0242",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0243",
+    "customerId": "CUST0243",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0244",
+    "customerId": "CUST0244",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0245",
+    "customerId": "CUST0245",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0246",
+    "customerId": "CUST0246",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0247",
+    "customerId": "CUST0247",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0248",
+    "customerId": "CUST0248",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0249",
+    "customerId": "CUST0249",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0250",
+    "customerId": "CUST0250",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0251",
+    "customerId": "CUST0251",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0252",
+    "customerId": "CUST0252",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0253",
+    "customerId": "CUST0253",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0254",
+    "customerId": "CUST0254",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0255",
+    "customerId": "CUST0255",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0256",
+    "customerId": "CUST0256",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0257",
+    "customerId": "CUST0257",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0258",
+    "customerId": "CUST0258",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0259",
+    "customerId": "CUST0259",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0260",
+    "customerId": "CUST0260",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0261",
+    "customerId": "CUST0261",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0262",
+    "customerId": "CUST0262",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0263",
+    "customerId": "CUST0263",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0264",
+    "customerId": "CUST0264",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0265",
+    "customerId": "CUST0265",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0266",
+    "customerId": "CUST0266",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0267",
+    "customerId": "CUST0267",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0268",
+    "customerId": "CUST0268",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0269",
+    "customerId": "CUST0269",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0270",
+    "customerId": "CUST0270",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0271",
+    "customerId": "CUST0271",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0272",
+    "customerId": "CUST0272",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0273",
+    "customerId": "CUST0273",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0274",
+    "customerId": "CUST0274",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0275",
+    "customerId": "CUST0275",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0276",
+    "customerId": "CUST0276",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0277",
+    "customerId": "CUST0277",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0278",
+    "customerId": "CUST0278",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0279",
+    "customerId": "CUST0279",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0280",
+    "customerId": "CUST0280",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0281",
+    "customerId": "CUST0281",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0282",
+    "customerId": "CUST0282",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0283",
+    "customerId": "CUST0283",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0284",
+    "customerId": "CUST0284",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0285",
+    "customerId": "CUST0285",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0286",
+    "customerId": "CUST0286",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0287",
+    "customerId": "CUST0287",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0288",
+    "customerId": "CUST0288",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0289",
+    "customerId": "CUST0289",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0290",
+    "customerId": "CUST0290",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0291",
+    "customerId": "CUST0291",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0292",
+    "customerId": "CUST0292",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0293",
+    "customerId": "CUST0293",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0294",
+    "customerId": "CUST0294",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0295",
+    "customerId": "CUST0295",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0296",
+    "customerId": "CUST0296",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0297",
+    "customerId": "CUST0297",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0298",
+    "customerId": "CUST0298",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0299",
+    "customerId": "CUST0299",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0300",
+    "customerId": "CUST0300",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0301",
+    "customerId": "CUST0301",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0302",
+    "customerId": "CUST0302",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0303",
+    "customerId": "CUST0303",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0304",
+    "customerId": "CUST0304",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0305",
+    "customerId": "CUST0305",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0306",
+    "customerId": "CUST0306",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0307",
+    "customerId": "CUST0307",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0308",
+    "customerId": "CUST0308",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0309",
+    "customerId": "CUST0309",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0310",
+    "customerId": "CUST0310",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0311",
+    "customerId": "CUST0311",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0312",
+    "customerId": "CUST0312",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0313",
+    "customerId": "CUST0313",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0314",
+    "customerId": "CUST0314",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0315",
+    "customerId": "CUST0315",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0316",
+    "customerId": "CUST0316",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0317",
+    "customerId": "CUST0317",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0318",
+    "customerId": "CUST0318",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0319",
+    "customerId": "CUST0319",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0320",
+    "customerId": "CUST0320",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0321",
+    "customerId": "CUST0321",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0322",
+    "customerId": "CUST0322",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0323",
+    "customerId": "CUST0323",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0324",
+    "customerId": "CUST0324",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0325",
+    "customerId": "CUST0325",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0326",
+    "customerId": "CUST0326",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0327",
+    "customerId": "CUST0327",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0328",
+    "customerId": "CUST0328",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0329",
+    "customerId": "CUST0329",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0330",
+    "customerId": "CUST0330",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0331",
+    "customerId": "CUST0331",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0332",
+    "customerId": "CUST0332",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0333",
+    "customerId": "CUST0333",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0334",
+    "customerId": "CUST0334",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0335",
+    "customerId": "CUST0335",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0336",
+    "customerId": "CUST0336",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0337",
+    "customerId": "CUST0337",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0338",
+    "customerId": "CUST0338",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0339",
+    "customerId": "CUST0339",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0340",
+    "customerId": "CUST0340",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0341",
+    "customerId": "CUST0341",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0342",
+    "customerId": "CUST0342",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0343",
+    "customerId": "CUST0343",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0344",
+    "customerId": "CUST0344",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0345",
+    "customerId": "CUST0345",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0346",
+    "customerId": "CUST0346",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0347",
+    "customerId": "CUST0347",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0348",
+    "customerId": "CUST0348",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0349",
+    "customerId": "CUST0349",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0350",
+    "customerId": "CUST0350",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0351",
+    "customerId": "CUST0351",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0352",
+    "customerId": "CUST0352",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0353",
+    "customerId": "CUST0353",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0354",
+    "customerId": "CUST0354",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0355",
+    "customerId": "CUST0355",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0356",
+    "customerId": "CUST0356",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0357",
+    "customerId": "CUST0357",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0358",
+    "customerId": "CUST0358",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0359",
+    "customerId": "CUST0359",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0360",
+    "customerId": "CUST0360",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0361",
+    "customerId": "CUST0361",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0362",
+    "customerId": "CUST0362",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0363",
+    "customerId": "CUST0363",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0364",
+    "customerId": "CUST0364",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0365",
+    "customerId": "CUST0365",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0366",
+    "customerId": "CUST0366",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0367",
+    "customerId": "CUST0367",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0368",
+    "customerId": "CUST0368",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0369",
+    "customerId": "CUST0369",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0370",
+    "customerId": "CUST0370",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0371",
+    "customerId": "CUST0371",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0372",
+    "customerId": "CUST0372",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0373",
+    "customerId": "CUST0373",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0374",
+    "customerId": "CUST0374",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0375",
+    "customerId": "CUST0375",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0376",
+    "customerId": "CUST0376",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0377",
+    "customerId": "CUST0377",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0378",
+    "customerId": "CUST0378",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0379",
+    "customerId": "CUST0379",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0380",
+    "customerId": "CUST0380",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0381",
+    "customerId": "CUST0381",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0382",
+    "customerId": "CUST0382",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0383",
+    "customerId": "CUST0383",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0384",
+    "customerId": "CUST0384",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0385",
+    "customerId": "CUST0385",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0386",
+    "customerId": "CUST0386",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0387",
+    "customerId": "CUST0387",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0388",
+    "customerId": "CUST0388",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0389",
+    "customerId": "CUST0389",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0390",
+    "customerId": "CUST0390",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0391",
+    "customerId": "CUST0391",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0392",
+    "customerId": "CUST0392",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0393",
+    "customerId": "CUST0393",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0394",
+    "customerId": "CUST0394",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0395",
+    "customerId": "CUST0395",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0396",
+    "customerId": "CUST0396",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0397",
+    "customerId": "CUST0397",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0398",
+    "customerId": "CUST0398",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0399",
+    "customerId": "CUST0399",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0400",
+    "customerId": "CUST0400",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0401",
+    "customerId": "CUST0401",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0402",
+    "customerId": "CUST0402",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0403",
+    "customerId": "CUST0403",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0404",
+    "customerId": "CUST0404",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0405",
+    "customerId": "CUST0405",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0406",
+    "customerId": "CUST0406",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0407",
+    "customerId": "CUST0407",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0408",
+    "customerId": "CUST0408",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0409",
+    "customerId": "CUST0409",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0410",
+    "customerId": "CUST0410",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0411",
+    "customerId": "CUST0411",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0412",
+    "customerId": "CUST0412",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0413",
+    "customerId": "CUST0413",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0414",
+    "customerId": "CUST0414",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0415",
+    "customerId": "CUST0415",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0416",
+    "customerId": "CUST0416",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0417",
+    "customerId": "CUST0417",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0418",
+    "customerId": "CUST0418",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0419",
+    "customerId": "CUST0419",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0420",
+    "customerId": "CUST0420",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0421",
+    "customerId": "CUST0421",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0422",
+    "customerId": "CUST0422",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0423",
+    "customerId": "CUST0423",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0424",
+    "customerId": "CUST0424",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0425",
+    "customerId": "CUST0425",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0426",
+    "customerId": "CUST0426",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0427",
+    "customerId": "CUST0427",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0428",
+    "customerId": "CUST0428",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0429",
+    "customerId": "CUST0429",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0430",
+    "customerId": "CUST0430",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0431",
+    "customerId": "CUST0431",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0432",
+    "customerId": "CUST0432",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0433",
+    "customerId": "CUST0433",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0434",
+    "customerId": "CUST0434",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0435",
+    "customerId": "CUST0435",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0436",
+    "customerId": "CUST0436",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0437",
+    "customerId": "CUST0437",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0438",
+    "customerId": "CUST0438",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0439",
+    "customerId": "CUST0439",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0440",
+    "customerId": "CUST0440",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0441",
+    "customerId": "CUST0441",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0442",
+    "customerId": "CUST0442",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0443",
+    "customerId": "CUST0443",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0444",
+    "customerId": "CUST0444",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0445",
+    "customerId": "CUST0445",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0446",
+    "customerId": "CUST0446",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0447",
+    "customerId": "CUST0447",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0448",
+    "customerId": "CUST0448",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0449",
+    "customerId": "CUST0449",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0450",
+    "customerId": "CUST0450",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0451",
+    "customerId": "CUST0451",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0452",
+    "customerId": "CUST0452",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0453",
+    "customerId": "CUST0453",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0454",
+    "customerId": "CUST0454",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0455",
+    "customerId": "CUST0455",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0456",
+    "customerId": "CUST0456",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0457",
+    "customerId": "CUST0457",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0458",
+    "customerId": "CUST0458",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0459",
+    "customerId": "CUST0459",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0460",
+    "customerId": "CUST0460",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0461",
+    "customerId": "CUST0461",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0462",
+    "customerId": "CUST0462",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0463",
+    "customerId": "CUST0463",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0464",
+    "customerId": "CUST0464",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0465",
+    "customerId": "CUST0465",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0466",
+    "customerId": "CUST0466",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0467",
+    "customerId": "CUST0467",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0468",
+    "customerId": "CUST0468",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0469",
+    "customerId": "CUST0469",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0470",
+    "customerId": "CUST0470",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0471",
+    "customerId": "CUST0471",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0472",
+    "customerId": "CUST0472",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0473",
+    "customerId": "CUST0473",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0474",
+    "customerId": "CUST0474",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0475",
+    "customerId": "CUST0475",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0476",
+    "customerId": "CUST0476",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0477",
+    "customerId": "CUST0477",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0478",
+    "customerId": "CUST0478",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0479",
+    "customerId": "CUST0479",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0480",
+    "customerId": "CUST0480",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0481",
+    "customerId": "CUST0481",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0482",
+    "customerId": "CUST0482",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0483",
+    "customerId": "CUST0483",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0484",
+    "customerId": "CUST0484",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0485",
+    "customerId": "CUST0485",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0486",
+    "customerId": "CUST0486",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0487",
+    "customerId": "CUST0487",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0488",
+    "customerId": "CUST0488",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0489",
+    "customerId": "CUST0489",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0490",
+    "customerId": "CUST0490",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0491",
+    "customerId": "CUST0491",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0492",
+    "customerId": "CUST0492",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0493",
+    "customerId": "CUST0493",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0494",
+    "customerId": "CUST0494",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0495",
+    "customerId": "CUST0495",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0496",
+    "customerId": "CUST0496",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0497",
+    "customerId": "CUST0497",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0498",
+    "customerId": "CUST0498",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0499",
+    "customerId": "CUST0499",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0500",
+    "customerId": "CUST0500",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0501",
+    "customerId": "CUST0501",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0502",
+    "customerId": "CUST0502",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0503",
+    "customerId": "CUST0503",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0504",
+    "customerId": "CUST0504",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0505",
+    "customerId": "CUST0505",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0506",
+    "customerId": "CUST0506",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0507",
+    "customerId": "CUST0507",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0508",
+    "customerId": "CUST0508",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0509",
+    "customerId": "CUST0509",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0510",
+    "customerId": "CUST0510",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0511",
+    "customerId": "CUST0511",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0512",
+    "customerId": "CUST0512",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0513",
+    "customerId": "CUST0513",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0514",
+    "customerId": "CUST0514",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0515",
+    "customerId": "CUST0515",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0516",
+    "customerId": "CUST0516",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0517",
+    "customerId": "CUST0517",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0518",
+    "customerId": "CUST0518",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0519",
+    "customerId": "CUST0519",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0520",
+    "customerId": "CUST0520",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0521",
+    "customerId": "CUST0521",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0522",
+    "customerId": "CUST0522",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0523",
+    "customerId": "CUST0523",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0524",
+    "customerId": "CUST0524",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0525",
+    "customerId": "CUST0525",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0526",
+    "customerId": "CUST0526",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0527",
+    "customerId": "CUST0527",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0528",
+    "customerId": "CUST0528",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0529",
+    "customerId": "CUST0529",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0530",
+    "customerId": "CUST0530",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0531",
+    "customerId": "CUST0531",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0532",
+    "customerId": "CUST0532",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0533",
+    "customerId": "CUST0533",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0534",
+    "customerId": "CUST0534",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0535",
+    "customerId": "CUST0535",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0536",
+    "customerId": "CUST0536",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0537",
+    "customerId": "CUST0537",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0538",
+    "customerId": "CUST0538",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0539",
+    "customerId": "CUST0539",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0540",
+    "customerId": "CUST0540",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0541",
+    "customerId": "CUST0541",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0542",
+    "customerId": "CUST0542",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0543",
+    "customerId": "CUST0543",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0544",
+    "customerId": "CUST0544",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0545",
+    "customerId": "CUST0545",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0546",
+    "customerId": "CUST0546",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0547",
+    "customerId": "CUST0547",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0548",
+    "customerId": "CUST0548",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0549",
+    "customerId": "CUST0549",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0550",
+    "customerId": "CUST0550",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0551",
+    "customerId": "CUST0551",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0552",
+    "customerId": "CUST0552",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0553",
+    "customerId": "CUST0553",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0554",
+    "customerId": "CUST0554",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0555",
+    "customerId": "CUST0555",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0556",
+    "customerId": "CUST0556",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0557",
+    "customerId": "CUST0557",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0558",
+    "customerId": "CUST0558",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0559",
+    "customerId": "CUST0559",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0560",
+    "customerId": "CUST0560",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0561",
+    "customerId": "CUST0561",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0562",
+    "customerId": "CUST0562",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0563",
+    "customerId": "CUST0563",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0564",
+    "customerId": "CUST0564",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0565",
+    "customerId": "CUST0565",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0566",
+    "customerId": "CUST0566",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0567",
+    "customerId": "CUST0567",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0568",
+    "customerId": "CUST0568",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0569",
+    "customerId": "CUST0569",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0570",
+    "customerId": "CUST0570",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0571",
+    "customerId": "CUST0571",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0572",
+    "customerId": "CUST0572",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0573",
+    "customerId": "CUST0573",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0574",
+    "customerId": "CUST0574",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0575",
+    "customerId": "CUST0575",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0576",
+    "customerId": "CUST0576",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0577",
+    "customerId": "CUST0577",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0578",
+    "customerId": "CUST0578",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0579",
+    "customerId": "CUST0579",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0580",
+    "customerId": "CUST0580",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0581",
+    "customerId": "CUST0581",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0582",
+    "customerId": "CUST0582",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0583",
+    "customerId": "CUST0583",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0584",
+    "customerId": "CUST0584",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0585",
+    "customerId": "CUST0585",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0586",
+    "customerId": "CUST0586",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0587",
+    "customerId": "CUST0587",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0588",
+    "customerId": "CUST0588",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0589",
+    "customerId": "CUST0589",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0590",
+    "customerId": "CUST0590",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0591",
+    "customerId": "CUST0591",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0592",
+    "customerId": "CUST0592",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0593",
+    "customerId": "CUST0593",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0594",
+    "customerId": "CUST0594",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0595",
+    "customerId": "CUST0595",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0596",
+    "customerId": "CUST0596",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0597",
+    "customerId": "CUST0597",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0598",
+    "customerId": "CUST0598",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0599",
+    "customerId": "CUST0599",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0600",
+    "customerId": "CUST0600",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0601",
+    "customerId": "CUST0601",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0602",
+    "customerId": "CUST0602",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0603",
+    "customerId": "CUST0603",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0604",
+    "customerId": "CUST0604",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0605",
+    "customerId": "CUST0605",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0606",
+    "customerId": "CUST0606",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0607",
+    "customerId": "CUST0607",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0608",
+    "customerId": "CUST0608",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0609",
+    "customerId": "CUST0609",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0610",
+    "customerId": "CUST0610",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0611",
+    "customerId": "CUST0611",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0612",
+    "customerId": "CUST0612",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0613",
+    "customerId": "CUST0613",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0614",
+    "customerId": "CUST0614",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0615",
+    "customerId": "CUST0615",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0616",
+    "customerId": "CUST0616",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0617",
+    "customerId": "CUST0617",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0618",
+    "customerId": "CUST0618",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0619",
+    "customerId": "CUST0619",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0620",
+    "customerId": "CUST0620",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0621",
+    "customerId": "CUST0621",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0622",
+    "customerId": "CUST0622",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0623",
+    "customerId": "CUST0623",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0624",
+    "customerId": "CUST0624",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0625",
+    "customerId": "CUST0625",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0626",
+    "customerId": "CUST0626",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0627",
+    "customerId": "CUST0627",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0628",
+    "customerId": "CUST0628",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0629",
+    "customerId": "CUST0629",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0630",
+    "customerId": "CUST0630",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0631",
+    "customerId": "CUST0631",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0632",
+    "customerId": "CUST0632",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0633",
+    "customerId": "CUST0633",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0634",
+    "customerId": "CUST0634",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0635",
+    "customerId": "CUST0635",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0636",
+    "customerId": "CUST0636",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0637",
+    "customerId": "CUST0637",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0638",
+    "customerId": "CUST0638",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0639",
+    "customerId": "CUST0639",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0640",
+    "customerId": "CUST0640",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0641",
+    "customerId": "CUST0641",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0642",
+    "customerId": "CUST0642",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0643",
+    "customerId": "CUST0643",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0644",
+    "customerId": "CUST0644",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0645",
+    "customerId": "CUST0645",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0646",
+    "customerId": "CUST0646",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0647",
+    "customerId": "CUST0647",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0648",
+    "customerId": "CUST0648",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0649",
+    "customerId": "CUST0649",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0650",
+    "customerId": "CUST0650",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0651",
+    "customerId": "CUST0651",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0652",
+    "customerId": "CUST0652",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0653",
+    "customerId": "CUST0653",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0654",
+    "customerId": "CUST0654",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0655",
+    "customerId": "CUST0655",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0656",
+    "customerId": "CUST0656",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0657",
+    "customerId": "CUST0657",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0658",
+    "customerId": "CUST0658",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0659",
+    "customerId": "CUST0659",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0660",
+    "customerId": "CUST0660",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0661",
+    "customerId": "CUST0661",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0662",
+    "customerId": "CUST0662",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0663",
+    "customerId": "CUST0663",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0664",
+    "customerId": "CUST0664",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0665",
+    "customerId": "CUST0665",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0666",
+    "customerId": "CUST0666",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0667",
+    "customerId": "CUST0667",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0668",
+    "customerId": "CUST0668",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0669",
+    "customerId": "CUST0669",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0670",
+    "customerId": "CUST0670",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0671",
+    "customerId": "CUST0671",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0672",
+    "customerId": "CUST0672",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0673",
+    "customerId": "CUST0673",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0674",
+    "customerId": "CUST0674",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0675",
+    "customerId": "CUST0675",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0676",
+    "customerId": "CUST0676",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0677",
+    "customerId": "CUST0677",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0678",
+    "customerId": "CUST0678",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0679",
+    "customerId": "CUST0679",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0680",
+    "customerId": "CUST0680",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0681",
+    "customerId": "CUST0681",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0682",
+    "customerId": "CUST0682",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0683",
+    "customerId": "CUST0683",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0684",
+    "customerId": "CUST0684",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0685",
+    "customerId": "CUST0685",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0686",
+    "customerId": "CUST0686",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0687",
+    "customerId": "CUST0687",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0688",
+    "customerId": "CUST0688",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0689",
+    "customerId": "CUST0689",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0690",
+    "customerId": "CUST0690",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0691",
+    "customerId": "CUST0691",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0692",
+    "customerId": "CUST0692",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0693",
+    "customerId": "CUST0693",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0694",
+    "customerId": "CUST0694",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0695",
+    "customerId": "CUST0695",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0696",
+    "customerId": "CUST0696",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0697",
+    "customerId": "CUST0697",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0698",
+    "customerId": "CUST0698",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0699",
+    "customerId": "CUST0699",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0700",
+    "customerId": "CUST0700",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0701",
+    "customerId": "CUST0701",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0702",
+    "customerId": "CUST0702",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0703",
+    "customerId": "CUST0703",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0704",
+    "customerId": "CUST0704",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0705",
+    "customerId": "CUST0705",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0706",
+    "customerId": "CUST0706",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0707",
+    "customerId": "CUST0707",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0708",
+    "customerId": "CUST0708",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0709",
+    "customerId": "CUST0709",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0710",
+    "customerId": "CUST0710",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0711",
+    "customerId": "CUST0711",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0712",
+    "customerId": "CUST0712",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0713",
+    "customerId": "CUST0713",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0714",
+    "customerId": "CUST0714",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0715",
+    "customerId": "CUST0715",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0716",
+    "customerId": "CUST0716",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0717",
+    "customerId": "CUST0717",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0718",
+    "customerId": "CUST0718",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0719",
+    "customerId": "CUST0719",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0720",
+    "customerId": "CUST0720",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0721",
+    "customerId": "CUST0721",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0722",
+    "customerId": "CUST0722",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0723",
+    "customerId": "CUST0723",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0724",
+    "customerId": "CUST0724",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0725",
+    "customerId": "CUST0725",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0726",
+    "customerId": "CUST0726",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0727",
+    "customerId": "CUST0727",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0728",
+    "customerId": "CUST0728",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0729",
+    "customerId": "CUST0729",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0730",
+    "customerId": "CUST0730",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0731",
+    "customerId": "CUST0731",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0732",
+    "customerId": "CUST0732",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0733",
+    "customerId": "CUST0733",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0734",
+    "customerId": "CUST0734",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0735",
+    "customerId": "CUST0735",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0736",
+    "customerId": "CUST0736",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0737",
+    "customerId": "CUST0737",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0738",
+    "customerId": "CUST0738",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0739",
+    "customerId": "CUST0739",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0740",
+    "customerId": "CUST0740",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0741",
+    "customerId": "CUST0741",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0742",
+    "customerId": "CUST0742",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0743",
+    "customerId": "CUST0743",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0744",
+    "customerId": "CUST0744",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0745",
+    "customerId": "CUST0745",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0746",
+    "customerId": "CUST0746",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0747",
+    "customerId": "CUST0747",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0748",
+    "customerId": "CUST0748",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0749",
+    "customerId": "CUST0749",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0750",
+    "customerId": "CUST0750",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0751",
+    "customerId": "CUST0751",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0752",
+    "customerId": "CUST0752",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0753",
+    "customerId": "CUST0753",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0754",
+    "customerId": "CUST0754",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0755",
+    "customerId": "CUST0755",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0756",
+    "customerId": "CUST0756",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0757",
+    "customerId": "CUST0757",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0758",
+    "customerId": "CUST0758",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0759",
+    "customerId": "CUST0759",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0760",
+    "customerId": "CUST0760",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0761",
+    "customerId": "CUST0761",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0762",
+    "customerId": "CUST0762",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0763",
+    "customerId": "CUST0763",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0764",
+    "customerId": "CUST0764",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0765",
+    "customerId": "CUST0765",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0766",
+    "customerId": "CUST0766",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0767",
+    "customerId": "CUST0767",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0768",
+    "customerId": "CUST0768",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0769",
+    "customerId": "CUST0769",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0770",
+    "customerId": "CUST0770",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0771",
+    "customerId": "CUST0771",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0772",
+    "customerId": "CUST0772",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0773",
+    "customerId": "CUST0773",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0774",
+    "customerId": "CUST0774",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0775",
+    "customerId": "CUST0775",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0776",
+    "customerId": "CUST0776",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0777",
+    "customerId": "CUST0777",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0778",
+    "customerId": "CUST0778",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0779",
+    "customerId": "CUST0779",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0780",
+    "customerId": "CUST0780",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0781",
+    "customerId": "CUST0781",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0782",
+    "customerId": "CUST0782",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0783",
+    "customerId": "CUST0783",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0784",
+    "customerId": "CUST0784",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0785",
+    "customerId": "CUST0785",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0786",
+    "customerId": "CUST0786",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0787",
+    "customerId": "CUST0787",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0788",
+    "customerId": "CUST0788",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0789",
+    "customerId": "CUST0789",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0790",
+    "customerId": "CUST0790",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0791",
+    "customerId": "CUST0791",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0792",
+    "customerId": "CUST0792",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0793",
+    "customerId": "CUST0793",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0794",
+    "customerId": "CUST0794",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0795",
+    "customerId": "CUST0795",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0796",
+    "customerId": "CUST0796",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0797",
+    "customerId": "CUST0797",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0798",
+    "customerId": "CUST0798",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0799",
+    "customerId": "CUST0799",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  },
+  {
+    "activityId": "ACT0800",
+    "customerId": "CUST0800",
+    "lastLogin": "2026-05-01",
+    "device": "Android",
+    "loginLocation": "Bandung",
+    "appActivity": "Browse",
+    "usageDuration": 30
+  }
+]

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LoyaltyBadge } from "./Badge";
 import DataTable from "./DataTable";
 import { useTheme } from "../context/ThemeContext";
 
@@ -9,7 +8,7 @@ const CustomerTable = ({ customers, compact }) => {
 
     return (
         <DataTable
-            columns={["ID", "Name", "Email", "Phone", "Loyalty"]}
+            columns={["ID", "Nama Lengkap", "Username", "Gender", "Tanggal Lahir"]}
             compact={compact}
         >
             {customers.map((customer) => (
@@ -22,14 +21,12 @@ const CustomerTable = ({ customers, compact }) => {
                     </td>
                     <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>
                         <Link to={`/customers/${customer.id}`} className="hover:underline">
-                            {customer.name}
+                            {customer.fullName}
                         </Link>
                     </td>
-                    <td className="px-5 py-4">{customer.email}</td>
-                    <td className="px-5 py-4">{customer.phone}</td>
-                    <td className="px-5 py-4">
-                        <LoyaltyBadge loyalty={customer.loyalty} />
-                    </td>
+                    <td className="px-5 py-4">{customer.username}</td>
+                    <td className="px-5 py-4">{customer.gender}</td>
+                    <td className="px-5 py-4">{new Date(customer.birthDate).toLocaleDateString("id-ID")}</td>
                 </tr>
             ))}
         </DataTable>
