@@ -1,10 +1,28 @@
 import { useState } from "react";
+import userAPI from "../../services/userAPI";
 
 export default function Register() {
     const [showPass, setShowPass] = useState(false);
     const [showConfirm, setShowConfirm] = useState(false);
-    const [form, setForm] = useState({ email: "", password: "", confirmPassword: "" });
+    const [form, setForm] = useState({ username: "", password: "", confirmPassword: "" });
     const [strength, setStrength] = useState(0);
+
+    const handleRegister = async (e) => {
+      e.preventDefault();
+      if (form.password && form.password === form.confirmPassword) {
+        try {
+          await userAPI.registerUser({ username: form.username, password: form.password, role: "user" });
+          alert("User registered successfully");
+          // Optionally reset form
+          setForm({ username: "", password: "", confirmPassword: "" });
+        } catch (err) {
+          console.error(err);
+          alert(err.message || "Failed to register");
+        }
+      } else {
+        alert("Password and Confirm Password must match");
+      }
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -175,7 +193,7 @@ export default function Register() {
                     </div>
 
                     {/* Form */}
-                    <form className="form-in" onSubmit={(e) => e.preventDefault()}>
+                    <form className="form-in" onSubmit={handleRegister}>
 
                         {/* Email */}
                         <div className="mb-4">
@@ -183,15 +201,15 @@ export default function Register() {
                                 display: "block", fontFamily: "'DM Sans', sans-serif",
                                 fontWeight: 500, fontSize: "0.78rem", color: "#00695c",
                                 letterSpacing: "0.03em", marginBottom: 6,
-                            }}>Email Address</label>
+                            }}>Username</label>
                             <div style={{ position: "relative" }}>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                                     style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", pointerEvents: "none" }}>
                                     <rect x="2" y="4" width="20" height="16" rx="3" stroke="#80cbc4" strokeWidth="1.6" />
                                     <path d="M2 8l10 6 10-6" stroke="#80cbc4" strokeWidth="1.6" strokeLinecap="round" />
                                 </svg>
-                                <input name="email" type="email" onChange={handleChange}
-                                    className="auth-input" placeholder="you@example.com" />
+                                <input name="username" type="text" onChange={handleChange}
+                                     className="auth-input" placeholder="yourusername" />
                             </div>
                         </div>
 

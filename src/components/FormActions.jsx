@@ -9,7 +9,7 @@ const FormActions = ({
 }) => {
     return (
         <div className="flex justify-end gap-3">
-            <Button type={submitType} className="bg-emerald-500 text-white hover:bg-emerald-600">
+            <Button type={submitType} className="bg-teal-500 text-white hover:bg-teal-600">
                 {submitLabel}
             </Button>
 

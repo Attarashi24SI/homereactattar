@@ -19,7 +19,7 @@ export default function Payments() {
                             <p className={`mt-1 text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>{new Date(payment.paymentDate).toLocaleDateString("id-ID")}</p>
                             <div className="mt-4 flex items-center justify-between">
                                 <span>{payment.paymentMethod}</span>
-                                <span className={`rounded-full px-3 py-1 text-xs font-medium ${payment.paymentStatus === "Paid" ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
+                                <span className={`rounded-full px-3 py-1 text-xs font-medium ${payment.paymentStatus === "Paid" ? "bg-teal-100 text-teal-700" : "bg-amber-100 text-amber-700"}`}>
                                     {payment.paymentStatus}
                                 </span>
                             </div>

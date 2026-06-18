@@ -4,12 +4,14 @@ import axios from "axios"
 
 export default function OrdersDetail() {
     const { id } = useParams()
+    const productId = Number(id.replace(/\D/g, ""))
     const [product, setProduct] = useState(null)
     const [error, setError] = useState(null)
 
+    // useEffect 
     useEffect(() => {
         axios
-            .get(`https://dummyjson.com/products/${id}`)
+            .get(`https://dummyjson.com/products/${productId}`)
             .then((response) => {
                 if (response.status !== 200) {
                     setError(response.message)
@@ -20,7 +22,7 @@ export default function OrdersDetail() {
             .catch((err) => {
                 setError(err.message)
             })
-    }, [id])
+    }, [productId])
 
     if (error) return <div className="text-red-600 p-4">{error}</div>
     if (!product) return <div className="p-4">Loading...</div>

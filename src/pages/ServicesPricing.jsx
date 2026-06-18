@@ -14,7 +14,7 @@ export default function ServicesPricing() {
 
             <section className={`rounded-lg border p-5 shadow-2xl ${isLight ? "border-teal-100 bg-teal-50 text-slate-700 shadow-teal-100" : "border-white/5 bg-[#06090f] text-white shadow-black/30"}`}>
                 <div className="mb-4 flex justify-end">
-                    <button className={`rounded-lg px-4 py-2 text-sm font-semibold text-white ${isLight ? "bg-rose-400 hover:bg-rose-500" : "bg-emerald-500 hover:bg-emerald-600"}`}>
+                    <button className={`rounded-lg px-4 py-2 text-sm font-semibold text-white ${isLight ? "bg-teal-500 hover:bg-teal-600" : "bg-emerald-500 hover:bg-emerald-600"}`}>
                         + Tambah Layanan
                     </button>
                 </div>

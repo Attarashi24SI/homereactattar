@@ -1,14 +1,24 @@
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { MdError } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import userAPI from "../../services/userAPI";
 
 export default function Login() {
   const navigate = useNavigate();
+
+  // useRef dipakai untuk mengakses input email secara langsung.
+  const emailInputRef = useRef(null);
+
+  // useState dipakai untuk menyimpan data yang berubah di halaman login.
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [dataForm, setDataForm] = useState({ email: "", password: "" });
+  const [dataForm, setDataForm] = useState({ username: "", password: "" });
+
+  // useEffect dipakai untuk menjalankan fokus input saat halaman login pertama kali dibuka.
+  useEffect(() => {
+    emailInputRef.current?.focus();
+  }, []);
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
@@ -18,25 +28,22 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError(false);
-    axios
-      .post("https://dummyjson.com/user/login", {
-        username: dataForm.email,
-        password: dataForm.password,
-      })
-      .then((response) => {
-        if (response.status !== 200) {
-          setError(response.data.message);
-          return;
-        }
+    setError("");
+    try {
+      const result = await userAPI.loginUser({ username: dataForm.username, password: dataForm.password });
+      // Supabase returns an array of matching rows
+      if (result && result.length > 0) {
+        // Successful login, navigate to dashboard (placeholder)
         navigate("/");
-      })
-      .catch((err) => {
-        if (err.response)
-          setError(err.response.data.message || "An error occurred");
-        else setError(err.message || "An unknown error occurred");
-      })
-      .finally(() => setLoading(false));
+      } else {
+        setError("Invalid username or password");
+      }
+    } catch (err) {
+      console.error(err);
+      setError(err.message || "Login failed");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -51,11 +58,11 @@ export default function Login() {
           width: 100%;
           padding: 12px 16px 12px 42px;
           background: #ffffff;
-          border: 1px solid #d1d5db;
+          border: 1px solid #ccfbf1;
           border-radius: 12px;
           font-family: 'DM Sans', sans-serif;
           font-size: 0.875rem;
-          color: #111827;
+          color: #334155;
           outline: none;
           transition: 0.2s;
         }
@@ -65,14 +72,14 @@ export default function Login() {
         }
 
         .auth-input:focus {
-          border-color: #007AFF;
-          box-shadow: 0 0 0 3px rgba(0,122,255,0.15);
+          border-color: #14b8a6;
+          box-shadow: 0 0 0 3px rgba(20,184,166,0.14);
         }
 
         .auth-btn {
           width: 100%;
           padding: 13px;
-          background: #007AFF;
+          background: #14b8a6;
           color: white;
           border: none;
           border-radius: 12px;
@@ -80,12 +87,13 @@ export default function Login() {
           font-size: 0.9rem;
           font-weight: 500;
           cursor: pointer;
-          box-shadow: 0 4px 14px rgba(0,122,255,0.3);
+          box-shadow: 0 8px 18px rgba(20,184,166,0.22);
           transition: 0.2s;
         }
 
         .auth-btn:hover:not(:disabled) {
-          box-shadow: 0 6px 18px rgba(0,122,255,0.4);
+          background: #0f766e;
+          box-shadow: 0 10px 22px rgba(20,184,166,0.28);
           transform: translateY(-1px);
         }
 
@@ -99,19 +107,29 @@ export default function Login() {
         <div
           style={{
             background: "#ffffff",
-            border: "1px solid #e5e7eb",
+            border: "1px solid #ccfbf1",
             borderRadius: 24,
             padding: "40px 32px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+            boxShadow: "0 18px 45px rgba(20,184,166,0.12)",
           }}
         >
           {/* Title */}
           <div className="text-center mb-6">
+            <div
+              className="mx-auto mb-4"
+              style={{
+                width: 28,
+                height: 28,
+                borderRadius: 6,
+                background: "#14b8a6",
+                boxShadow: "0 8px 18px rgba(20,184,166,0.24)",
+              }}
+            ></div>
             <h1
               style={{
                 fontFamily: "'DM Serif Display', serif",
                 fontSize: "1.6rem",
-                color: "#111827",
+                color: "#334155",
               }}
             >
               BrightWash
@@ -123,7 +141,7 @@ export default function Login() {
                 color: "#6b7280",
               }}
             >
-              Welcome Back 👋
+              Welcome Back
             </p>
           </div>
 
@@ -147,9 +165,9 @@ export default function Login() {
             <div
               className="mb-4 flex items-center gap-2 px-4 py-3 rounded-xl text-sm"
               style={{
-                background: "rgba(0,122,255,0.05)",
-                border: "1px solid rgba(0,122,255,0.15)",
-                color: "#007AFF",
+                background: "rgba(20,184,166,0.06)",
+                border: "1px solid rgba(20,184,166,0.18)",
+                color: "#0f766e",
               }}
             >
               <AiOutlineLoading3Quarters className="animate-spin" />
@@ -168,11 +186,13 @@ export default function Login() {
                   display: "block",
                 }}
               >
-                Email
+                Username
               </label>
               <input
-                name="email"
+                ref={emailInputRef}
+                name="username"
                 type="text"
+                value={dataForm.username}
                 onChange={handleChange}
                 className="auth-input"
                 placeholder="you@example.com"
@@ -185,16 +205,17 @@ export default function Login() {
                 <label style={{ fontSize: "0.8rem", color: "#374151" }}>
                   Password
                 </label>
-                <a href="/forgot" style={{ color: "#007AFF", fontSize: "0.75rem" }}>
+                <a href="/forgot" style={{ color: "#14b8a6", fontSize: "0.75rem" }}>
                   Lupa password?
                 </a>
               </div>
               <input
                 name="password"
                 type="password"
+                value={dataForm.password}
                 onChange={handleChange}
                 className="auth-input"
-                placeholder="••••••••"
+                placeholder="********"
               />
             </div>
 
@@ -215,7 +236,7 @@ export default function Login() {
               style={{ fontSize: "0.8rem", color: "#6b7280" }}
             >
               Belum punya akun?{" "}
-              <a href="/register" style={{ color: "#007AFF" }}>
+              <a href="/register" style={{ color: "#14b8a6" }}>
                 Daftar
               </a>
             </p>

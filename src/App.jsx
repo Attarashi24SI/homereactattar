@@ -11,7 +11,7 @@ function App() {
   const CustomersDetail = React.lazy(() => import("./pages/CustomersDetail"));
   const Orders = React.lazy(() => import("./pages/Orders"));
   const OrdersDetail = React.lazy(() => import("./pages/OrdersDetail"));
-  const LaundryBooking = React.lazy(() => import("./pages/LaundryBooking"));
+
   const Notifications = React.lazy(() => import("./pages/Notifications"));
   const OrderHistory = React.lazy(() => import("./pages/OrderHistory"));
   const Payments = React.lazy(() => import("./pages/Payments"));
@@ -37,7 +37,7 @@ function App() {
             <Route path="/customers/:id" element={<CustomersDetail />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrdersDetail />} />
-            <Route path="/laundry-booking" element={<LaundryBooking />} />
+
             <Route path="/tracking-status" element={<TrackingStatus />} />
             <Route path="/services-pricing" element={<ServicesPricing />} />
             <Route path="/notifications" element={<Notifications />} />

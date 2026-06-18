@@ -9,7 +9,7 @@ const FormInput = ({ className = "", ...props }) => {
 
     return (
         <input
-            className={`w-full rounded-lg border px-3 py-2 text-sm outline-none focus:border-emerald-400 ${themeClass} ${className}`}
+            className={`w-full rounded-lg border px-3 py-2 text-sm outline-none focus:border-teal-400 ${themeClass} ${className}`}
             {...props}
         />
     );

@@ -21,7 +21,7 @@ const ProfileAvatar = ({ name = "", src, alt = name }) => {
     }
 
     return (
-        <div className={`flex h-11 w-11 items-center justify-center rounded-full text-sm font-semibold text-white ${isLight ? "bg-rose-400" : "bg-gradient-to-br from-amber-300 to-orange-600"}`}>
+        <div className={`flex h-11 w-11 items-center justify-center rounded-full text-sm font-semibold text-white ${isLight ? "bg-teal-500" : "bg-gradient-to-br from-amber-300 to-orange-600"}`}>
             {initials}
         </div>
     );

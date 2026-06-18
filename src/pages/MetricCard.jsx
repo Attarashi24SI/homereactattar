@@ -7,14 +7,14 @@ const MetricCard = ({ metric }) => {
     const Icon = metric.positive ? TrendingUp : TrendingDown;
     const tone = metric.positive
         ? isLight
-            ? "bg-emerald-100 text-emerald-700"
+            ? "bg-teal-100 text-teal-700"
             : "bg-emerald-500/15 text-emerald-300"
         : isLight
             ? "bg-amber-100 text-amber-700"
             : "bg-red-500/15 text-red-300";
 
     return (
-        <article className={`min-h-28 rounded-lg border p-5 shadow-2xl ${isLight ? "border-gray-100 bg-white shadow-gray-100" : "border-white/5 bg-[#06090f]/95 shadow-black/35"}`}>
+        <article className={`min-h-28 rounded-lg border p-5 shadow-2xl ${isLight ? "border-teal-100 bg-white shadow-teal-100" : "border-white/5 bg-[#06090f]/95 shadow-black/35"}`}>
             <div>
                 <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-300"}`}>{metric.label}</p>
                 <p className={`mt-2 text-2xl font-bold ${isLight ? "text-black" : "text-white"}`}>

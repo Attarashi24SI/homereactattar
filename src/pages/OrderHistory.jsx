@@ -12,11 +12,11 @@ export default function OrderHistory() {
     const getStatusColor = (status) => {
         switch (status) {
             case "Completed":
-                return isLight ? "bg-emerald-100 text-emerald-700" : "bg-green-500 text-white";
+                return isLight ? "bg-teal-100 text-teal-700" : "bg-green-500 text-white";
             case "Pending":
                 return isLight ? "bg-sky-100 text-sky-700" : "bg-yellow-400 text-white";
             case "Cancelled":
-                return isLight ? "bg-rose-100 text-rose-700" : "bg-red-500 text-white";
+                return isLight ? "bg-red-100 text-red-700" : "bg-red-500 text-white";
             default:
                 return isLight ? "bg-slate-100 text-slate-700" : "bg-gray-400 text-white";
         }

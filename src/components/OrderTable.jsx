@@ -27,7 +27,7 @@ const OrderTable = ({ orders, compact }) => {
                     <td className={`px-5 py-4 font-medium ${isLight ? "text-slate-700" : "text-white"}`}>
                         <Link
                             to={`/orders/${order.orderId}`}
-                            className="text-emerald-400 hover:text-emerald-500"
+                            className="text-teal-500 hover:text-teal-600"
                         >
                             {order.customerName || order.customerId}
                         </Link>
