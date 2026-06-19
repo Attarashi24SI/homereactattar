@@ -6,6 +6,7 @@ import {
     Bell,
     ClipboardList,
     CreditCard,
+    Crown,
     History,
     LayoutDashboard,
     ShoppingCart,
@@ -51,7 +52,7 @@ const Sidebar = () => {
                     <ul className="space-y-1.5">
 
                         <li>
-                            <NavLink to="/" end className={menuClass}>
+                            <NavLink to="/dashboard" end className={menuClass}>
                                 <LayoutDashboard size={18} /> Dashboard
                             </NavLink>
                         </li>
@@ -96,6 +97,12 @@ const Sidebar = () => {
                         <li>
                             <NavLink to="/payments" className={menuClass}>
                                 <CreditCard size={18} /> Pembayaran
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/membership" className={menuClass}>
+                                <Crown size={18} /> Membership
                             </NavLink>
                         </li>
 

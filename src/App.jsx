@@ -17,6 +17,10 @@ function App() {
   const Payments = React.lazy(() => import("./pages/Payments"));
   const ServicesPricing = React.lazy(() => import("./pages/ServicesPricing"));
   const TrackingStatus = React.lazy(() => import("./pages/TrackingStatus"));
+  const Membership = React.lazy(() => import("./pages/Membership"));
+
+  // Guest pages
+  const Home = React.lazy(() => import("./pages/guest/Home"));
 
   // Layout
   const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
@@ -31,8 +35,11 @@ function App() {
     <ThemeProvider>
       <Suspense fallback={<Loading />}>
         <Routes>
+          {/* Guest landing page */}
+          <Route path="/" element={<Home />} />
+
           <Route element={<MainLayout />}>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/customers/:id" element={<CustomersDetail />} />
             <Route path="/orders" element={<Orders />} />
@@ -43,6 +50,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/order-history" element={<OrderHistory />} />
             <Route path="/payments" element={<Payments />} />
+            <Route path="/membership" element={<Membership />} />
           </Route>
 
           <Route element={<AuthLayout />}>

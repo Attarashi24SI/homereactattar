@@ -34,7 +34,7 @@ export default function Login() {
       // Supabase returns an array of matching rows
       if (result && result.length > 0) {
         // Successful login, navigate to dashboard (placeholder)
-        navigate("/");
+        navigate("/dashboard");
       } else {
         setError("Invalid username or password");
       }
