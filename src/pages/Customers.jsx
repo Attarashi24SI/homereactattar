@@ -28,14 +28,14 @@ export default function Customers() {
       setIsLoading(true);
       const data = await customerAPI.fetchCustomers();
 
-      // Petakan data dari Supabase ke format yang diharapkan tabel
+      // Map data from Supabase to table format (actual column names)
       const mappedData = Array.isArray(data) ? data.map(c => ({
-        id: c.id,
-        fullname: c.fullname, // Supabase kolomnya fullname
+        customerid: c.customerid,
+        fullname: c.fullname,
         username: c.username,
         gender: c.gender,
-        birthDate: c.birthDate, // Supabase kolomnya birthDate
-        plan: c.plan
+        birthDate: c.birthDate,
+        plan: c.plan,
       })) : [];
 
       setCustomers(mappedData);
@@ -68,12 +68,12 @@ export default function Customers() {
     if (formData.fullname && formData.username && formData.birthDate) {
       try {
         const newCustomerData = {
-          id: `CUST${String(customers.length + 1).padStart(4, "0")}`,
+          customerid: `CUST${String(customers.length + 1).padStart(4, "0")}`,
           fullname: formData.fullname,
           username: formData.username,
           gender: formData.gender,
           birthDate: formData.birthDate,
-          plan: formData.plan
+          plan: formData.plan,
         };
 
         await customerAPI.createCustomer(newCustomerData);

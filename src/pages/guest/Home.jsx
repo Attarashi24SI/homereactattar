@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 const services = [
     {
@@ -61,6 +62,8 @@ const plans = [
 ];
 
 export default function Home() {
+    const { isLoggedIn, user, logout } = useAuth();
+
     return (
         <div className="min-h-screen" style={{ background: "#ffffff", fontFamily: "'DM Sans', sans-serif" }}>
             <style>{`
@@ -122,55 +125,178 @@ export default function Home() {
                         ))}
                     </nav>
 
-                    {/* Auth Buttons */}
+                    {/* Auth Buttons / Profile */}
                     <div className="flex items-center gap-3">
-                        <Link
-                            to="/login"
-                            style={{
-                                padding: "8px 20px",
-                                fontSize: "0.875rem",
-                                fontWeight: 500,
-                                color: "#14b8a6",
-                                border: "1.5px solid #14b8a6",
-                                borderRadius: 10,
-                                textDecoration: "none",
-                                transition: "all 0.2s",
-                                background: "transparent",
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.background = "#f0fdfa";
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.background = "transparent";
-                            }}
-                        >
-                            Login
-                        </Link>
-                        <Link
-                            to="/register"
-                            style={{
-                                padding: "8px 20px",
-                                fontSize: "0.875rem",
-                                fontWeight: 500,
-                                color: "#ffffff",
-                                background: "#14b8a6",
-                                border: "1.5px solid #14b8a6",
-                                borderRadius: 10,
-                                textDecoration: "none",
-                                transition: "all 0.2s",
-                                boxShadow: "0 4px 14px rgba(20,184,166,0.25)",
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.background = "#0f766e";
-                                e.currentTarget.style.borderColor = "#0f766e";
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.background = "#14b8a6";
-                                e.currentTarget.style.borderColor = "#14b8a6";
-                            }}
-                        >
-                            Register
-                        </Link>
+                        {isLoggedIn ? (
+                            <>
+                                <Link
+                                    to="/member-portal"
+                                    style={{
+                                        padding: "8px 20px",
+                                        fontSize: "0.875rem",
+                                        fontWeight: 500,
+                                        color: "#ffffff",
+                                        background: "#14b8a6",
+                                        border: "1.5px solid #14b8a6",
+                                        borderRadius: 10,
+                                        textDecoration: "none",
+                                        transition: "all 0.2s",
+                                        boxShadow: "0 4px 14px rgba(20,184,166,0.25)",
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = "#0f766e";
+                                        e.currentTarget.style.borderColor = "#0f766e";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = "#14b8a6";
+                                        e.currentTarget.style.borderColor = "#14b8a6";
+                                    }}
+                                >
+                                    Member Portal
+                                </Link>
+
+                                {/* Profile Avatar + Info */}
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: 10,
+                                        padding: "6px 14px 6px 6px",
+                                        borderRadius: 14,
+                                        border: "1.5px solid #ccfbf1",
+                                        background: "#f0fdfa",
+                                        transition: "all 0.2s",
+                                        cursor: "default",
+                                    }}
+                                >
+                                    {/* Avatar */}
+                                    <div
+                                        style={{
+                                            width: 36,
+                                            height: 36,
+                                            borderRadius: 10,
+                                            background: user?.plan === "platinum"
+                                                ? "linear-gradient(135deg, #475569, #1e293b)"
+                                                : user?.plan === "gold"
+                                                    ? "linear-gradient(135deg, #f59e0b, #d97706)"
+                                                    : "linear-gradient(135deg, #94a3b8, #64748b)",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: "0.85rem",
+                                            fontWeight: 700,
+                                            color: "#ffffff",
+                                            boxShadow: "0 2px 8px rgba(20,184,166,0.2)",
+                                        }}
+                                    >
+                                        {(user?.fullname || user?.username || "U").charAt(0).toUpperCase()}
+                                    </div>
+
+                                    {/* Name + Tier */}
+                                    <div style={{ lineHeight: 1.3 }}>
+                                        <p style={{ fontSize: "0.8rem", fontWeight: 600, color: "#0f766e" }}>
+                                            {user?.fullname || user?.username}
+                                        </p>
+                                        <span
+                                            style={{
+                                                fontSize: "0.65rem",
+                                                fontWeight: 700,
+                                                textTransform: "uppercase",
+                                                letterSpacing: "0.05em",
+                                                color: user?.plan === "platinum"
+                                                    ? "#475569"
+                                                    : user?.plan === "gold"
+                                                        ? "#d97706"
+                                                        : "#64748b",
+                                            }}
+                                        >
+                                            {user?.membershipData?.membershipLevel || user?.plan || "Member"}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                {/* Logout */}
+                                <button
+                                    onClick={() => { logout(); }}
+                                    title="Logout"
+                                    style={{
+                                        width: 36,
+                                        height: 36,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        borderRadius: 10,
+                                        border: "1.5px solid #fecaca",
+                                        background: "transparent",
+                                        cursor: "pointer",
+                                        transition: "all 0.2s",
+                                        color: "#ef4444",
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = "#fef2f2";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = "transparent";
+                                    }}
+                                >
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                                        <polyline points="16 17 21 12 16 7" />
+                                        <line x1="21" y1="12" x2="9" y2="12" />
+                                    </svg>
+                                </button>
+                            </>
+                        ) : (
+                            <>
+                                <Link
+                                    to="/login"
+                                    style={{
+                                        padding: "8px 20px",
+                                        fontSize: "0.875rem",
+                                        fontWeight: 500,
+                                        color: "#14b8a6",
+                                        border: "1.5px solid #14b8a6",
+                                        borderRadius: 10,
+                                        textDecoration: "none",
+                                        transition: "all 0.2s",
+                                        background: "transparent",
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = "#f0fdfa";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = "transparent";
+                                    }}
+                                >
+                                    Login
+                                </Link>
+                                <Link
+                                    to="/register"
+                                    style={{
+                                        padding: "8px 20px",
+                                        fontSize: "0.875rem",
+                                        fontWeight: 500,
+                                        color: "#ffffff",
+                                        background: "#14b8a6",
+                                        border: "1.5px solid #14b8a6",
+                                        borderRadius: 10,
+                                        textDecoration: "none",
+                                        transition: "all 0.2s",
+                                        boxShadow: "0 4px 14px rgba(20,184,166,0.25)",
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.background = "#0f766e";
+                                        e.currentTarget.style.borderColor = "#0f766e";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.background = "#14b8a6";
+                                        e.currentTarget.style.borderColor = "#14b8a6";
+                                    }}
+                                >
+                                    Register
+                                </Link>
+                            </>
+                        )}
                     </div>
                 </div>
             </header>

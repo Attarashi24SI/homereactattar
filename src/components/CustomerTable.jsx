@@ -18,33 +18,33 @@ const CustomerTable = ({ customers, compact }) => {
 
     return (
         <DataTable
-            columns={["ID", "Nama Lengkap", "Username", "Gender", "Tanggal Lahir", "Plan", "Aksi"]}
+            columns={["Customer ID", "Nama", "Username", "Gender", "Tanggal Lahir", "Plan", "Aksi"]}
             compact={compact}
         >
             {customers.map((customer) => (
                 <tr
-                    key={customer.id}
+                    key={customer.customerid}
                     className={`transition-colors ${isLight ? "hover:bg-teal-50/70" : "hover:bg-white/5"}`}
                 >
                     <td className={`border-b px-6 py-4 font-semibold ${isLight ? "border-slate-100 text-teal-700" : "border-white/5 text-gray-400"}`}>
-                        {customer.id}
+                        {customer.customerid}
                     </td>
                     <td className={`border-b px-6 py-4 font-semibold ${isLight ? "border-slate-100 text-slate-900" : "border-white/5 text-white"}`}>
-                        <Link to={`/customers/${customer.id}`} className="transition hover:text-teal-700">
+                        <Link to={`/customers/${customer.customerid}`} className="transition hover:text-teal-700">
                             {customer.fullname}
                         </Link>
                     </td>
                     <td className={`border-b px-6 py-4 ${isLight ? "border-slate-100 text-slate-600" : "border-white/5"}`}>{customer.username}</td>
                     <td className={`border-b px-6 py-4 ${isLight ? "border-slate-100 text-slate-600" : "border-white/5"}`}>{customer.gender}</td>
                     <td className={`border-b px-6 py-4 ${isLight ? "border-slate-100 text-slate-600" : "border-white/5"}`}>{new Date(customer.birthDate).toLocaleDateString("id-ID")}</td>
-                    <td className={`border-b px-6 py-4 ${isLight ? "border-slate-100 text-slate-600" : "border-white/5"}`}>
+                    <td className={`border-b px-6 py-4 ${isLight ? "border-slate-100" : "border-white/5"}`}>
                         {customer.plan ? (
-                            <Badge 
-                                variant={isLight ? "secondary" : "outline"} 
+                            <Badge
+                                variant={isLight ? "secondary" : "outline"}
                                 className={`capitalize ${
-                                    customer.plan === 'PLATINUM' ? 'bg-slate-800 text-slate-100 dark:bg-slate-200 dark:text-slate-800' :
-                                    customer.plan === 'GOLD' ? 'bg-amber-100 text-amber-800 dark:bg-amber-500/20 dark:text-amber-300' :
-                                    'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                                    customer.plan === 'PLATINUM' ? 'bg-slate-800 text-slate-100' :
+                                    customer.plan === 'GOLD' ? 'bg-amber-100 text-amber-800' :
+                                    'bg-slate-100 text-slate-700'
                                 }`}
                             >
                                 {customer.plan}

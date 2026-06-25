@@ -8,15 +8,15 @@ import { Search, Filter } from "lucide-react";
 import membershipData from "../assets/data/membership.json";
 import customerData from "../assets/data/customer.json";
 
-// Build a lookup map: customerId -> customer info
-const customerMap = new Map(customerData.map((c) => [c.id, c]));
+// Build a lookup map: customerid -> customer info
+const customerMap = new Map(customerData.map((c) => [c.customerid, c]));
 
 // Enrich membership data with customer name
 const memberships = membershipData.map((m) => {
     const customer = customerMap.get(m.customerId);
     return {
         ...m,
-        customerName: customer?.fullName || m.customerId,
+        customerName: customer?.fullname || m.customerId,
         customerUsername: customer?.username || "-",
     };
 });

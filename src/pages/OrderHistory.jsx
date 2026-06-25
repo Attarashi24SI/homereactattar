@@ -4,7 +4,7 @@ import ordersData from "../assets/data/order.json";
 import customersData from "../assets/data/customer.json";
 import { useTheme } from "../context/ThemeContext";
 
-const customerNameById = new Map(customersData.map((customer) => [customer.id, customer.fullName]));
+const customerNameById = new Map(customersData.map((customer) => [customer.customerid, customer.fullname]));
 
 export default function OrderHistory() {
     const { isLight } = useTheme();

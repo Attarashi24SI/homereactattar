@@ -41,8 +41,8 @@ const CustomerForm = ({ formData, onChange, onSubmit, onCancel }) => {
                     required
                 >
                     <option value="" disabled>Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="L">Laki-laki</option>
+                    <option value="P">Perempuan</option>
                 </FormSelect>
                 <FormInput
                     type="date"

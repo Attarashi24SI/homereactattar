@@ -14,6 +14,7 @@ import FormSelect from "./FormSelect";
 const UserRegistrationForm = ({ onCancel }) => {
   const [formData, setFormData] = useState({
     username: "",
+    email: "",
     password: "",
     confirmPassword: "",
   });
@@ -32,12 +33,13 @@ const UserRegistrationForm = ({ onCancel }) => {
     try {
       await userAPI.registerUser({
         username: formData.username,
+        email: formData.email,
         password: formData.password,
         role: "user",
       });
       alert("User registered successfully");
       // Reset form after success
-      setFormData({ username: "", password: "", confirmPassword: "" });
+      setFormData({ username: "", email: "", password: "", confirmPassword: "" });
     } catch (err) {
       console.error(err);
       alert(err.message || "Failed to register user");
@@ -52,6 +54,14 @@ const UserRegistrationForm = ({ onCancel }) => {
           name="username"
           placeholder="Username"
           value={formData.username}
+          onChange={handleChange}
+          required
+        />
+        <FormInput
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
           onChange={handleChange}
           required
         />

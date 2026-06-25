@@ -6,24 +6,24 @@ import OrderTable from "../components/OrderTable";
 import { useTheme } from "../context/ThemeContext";
 
 export default function CustomersDetail() {
-  const { id } = useParams();
+  const { id: customerid } = useParams();
   const { isLight } = useTheme();
 
-  const customer = customersData.find((c) => c.id === id);
+  const customer = customersData.find((c) => c.customerid === customerid);
 
   if (!customer) {
     return <div className="p-6 text-red-500">Customer not found.</div>;
   }
 
   const customerOrders = ordersData
-    .filter((order) => order.customerId === id)
-    .map((order) => ({ ...order, customerName: customer.fullName }));
+    .filter((order) => order.customerId === customerid)
+    .map((order) => ({ ...order, customerName: customer.fullname }));
 
   return (
     <main className="space-y-6">
       <PageHeader
         title="Customer Detail"
-        breadcrumb={["Home", "Customers", customer.fullName]}
+        breadcrumb={["Home", "Customers", customer.fullname]}
       />
 
       <div className={`p-6 rounded-2xl border ${isLight ? "bg-white border-slate-100 shadow-sm" : "bg-white/5 border-white/10"}`}>
@@ -33,11 +33,11 @@ export default function CustomersDetail() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>ID Pelanggan</p>
-            <p className={`font-semibold ${isLight ? "text-slate-700" : "text-gray-200"}`}>{customer.id}</p>
+            <p className={`font-semibold ${isLight ? "text-slate-700" : "text-gray-200"}`}>{customer.customerid}</p>
           </div>
           <div>
             <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>Nama Lengkap</p>
-            <p className={`font-semibold ${isLight ? "text-slate-700" : "text-gray-200"}`}>{customer.fullName}</p>
+            <p className={`font-semibold ${isLight ? "text-slate-700" : "text-gray-200"}`}>{customer.fullname}</p>
           </div>
           <div>
             <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>Username</p>

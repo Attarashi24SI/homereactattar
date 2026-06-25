@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-// TODO: Ganti dengan URL API Customer Anda
-const API_URL = "https://gqfmyeatzyhlpwaayyrw.supabase.co/rest/v1/customer"; // URL tabel customer Supabase
+// URL matches actual Supabase table name: "customer" (not "customers")
+const API_URL = "https://gqfmyeatzyhlpwaayyrw.supabase.co/rest/v1/customer";
 
-// TODO: Ganti dengan API Key Anda
 const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxZm15ZWF0enlobHB3YWF5eXJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5NTc2OTcsImV4cCI6MjA5NjUzMzY5N30.aBIEH-skNf5p8eHN0g56h7SPNIw_4gRIrtPFUTblg1g";
 
 const headers = {
@@ -14,7 +13,40 @@ const headers = {
 
 export const customerAPI = {
     /**
-     * Mengambil daftar semua customer
+     * Fetch customer by username (actual column: username)
+     */
+    async fetchCustomerByUsername(username) {
+        try {
+            const response = await axios.get(
+                `${API_URL}?username=eq.${encodeURIComponent(username)}`,
+                { headers }
+            );
+            return response.data && response.data.length > 0 ? response.data[0] : null;
+        } catch (error) {
+            console.error("Gagal mengambil data customer:", error);
+            throw error;
+        }
+    },
+
+    /**
+     * Fetch membership by customerid (actual column: customerid)
+     */
+    async fetchMembershipByCustomerId(customerid) {
+        try {
+            const MEMBERSHIP_URL = API_URL.replace('/customer', '/membership');
+            const response = await axios.get(
+                `${MEMBERSHIP_URL}?customerId=eq.${encodeURIComponent(customerid)}`,
+                { headers }
+            );
+            return response.data && response.data.length > 0 ? response.data[0] : null;
+        } catch (error) {
+            console.error("Gagal mengambil data membership:", error);
+            return null;
+        }
+    },
+
+    /**
+     * Fetch all customers
      */
     async fetchCustomers() {
         try {
@@ -27,8 +59,8 @@ export const customerAPI = {
     },
 
     /**
-     * Menambahkan customer baru
-     * @param {Object} customerData - Objek data customer baru
+     * Create a new customer
+     * Actual columns: customerid, fullname, username, gender, birthDate, plan
      */
     async createCustomer(customerData) {
         try {
@@ -41,12 +73,15 @@ export const customerAPI = {
     },
 
     /**
-     * Mengupdate data customer yang sudah ada
-     * (Format URL/Query bisa disesuaikan dengan aturan API Anda, misal Supabase menggunakan ?id=eq.{id})
+     * Update customer by customerid
      */
-    async updateCustomer(id, customerData) {
+    async updateCustomer(customerid, customerData) {
         try {
-            const response = await axios.patch(`${API_URL}?id=eq.${id}`, customerData, { headers });
+            const response = await axios.patch(
+                `${API_URL}?customerid=eq.${customerid}`,
+                customerData,
+                { headers }
+            );
             return response.data;
         } catch (error) {
             console.error("Gagal mengupdate customer:", error);
@@ -55,15 +90,18 @@ export const customerAPI = {
     },
 
     /**
-     * Menghapus customer
+     * Delete customer by customerid
      */
-    async deleteCustomer(id) {
+    async deleteCustomer(customerid) {
         try {
-            const response = await axios.delete(`${API_URL}?id=eq.${id}`, { headers });
+            const response = await axios.delete(
+                `${API_URL}?customerid=eq.${customerid}`,
+                { headers }
+            );
             return response.data;
         } catch (error) {
             console.error("Gagal menghapus customer:", error);
             throw error;
         }
-    }
+    },
 };

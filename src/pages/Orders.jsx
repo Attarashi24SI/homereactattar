@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "../components/ui/dialog";
 
-const customerNameById = new Map(customersData.map((customer) => [customer.id, customer.fullName]));
+const customerNameById = new Map(customersData.map((customer) => [customer.customerid, customer.fullname]));
 const initialOrders = ordersData.map((order) => ({
   ...order,
   customerName: customerNameById.get(order.customerId),
