@@ -34,6 +34,39 @@ export const STATUS_COPY = {
     Completed: ["Selesai", "Pesanan laundry sudah selesai."],
 };
 
+export const FALLBACK_TESTIMONIALS = [
+    {
+        id: "1",
+        name: "Sarah Wijaya",
+        rating: 5,
+        text: "Very fast service and the clothes were perfectly clean. Highly recommended!",
+    },
+    {
+        id: "2",
+        name: "Budi Santoso",
+        rating: 5,
+        text: "Pelayanan sangat memuaskan, pakaian wangi dan rapi. Sudah langganan sejak 3 bulan lalu.",
+    },
+    {
+        id: "3",
+        name: "Dian Permata",
+        rating: 4,
+        text: "Super express 3 jam benar-benar tepat waktu. Cocok untuk kebutuhan mendesak.",
+    },
+    {
+        id: "4",
+        name: "Rina Marlina",
+        rating: 5,
+        text: "Harga terjangkau dengan kualitas premium. Tim BrightWash sangat profesional.",
+    },
+    {
+        id: "5",
+        name: "Andi Pratama",
+        rating: 4,
+        text: "Layanan setrika premiumnya luar biasa. Rapi dan wangi tahan lama.",
+    },
+];
+
 export const FALLBACK_SERVICES = [
     ["11111111-1111-4111-8111-111111111111", "Cuci Komplit (Cuci + Setrika)", "Laundry Reguler", "Paket pencucian lengkap termasuk pencucian, pengeringan, dan penyetrikaan pakaian.", 10000, "Kg", "2 Hari", "Droplets", "teal"],
     ["22222222-2222-4222-8222-222222222222", "Setrika Saja", "Laundry Reguler", "Layanan penyetrikaan pakaian.", 7000, "Kg", "1 Hari", "Shirt", "cyan"],
@@ -129,6 +162,17 @@ export const normalizeOrder = (order) => {
 };
 
 export const laundryPortalAPI = {
+    async fetchTestimonials() {
+        try {
+            const query = `${SUPABASE_URL}/testimonials?is_active=eq.true&select=*&order=created_at.asc`;
+            const response = await axios.get(query, { headers });
+            return response.data?.length ? response.data : FALLBACK_TESTIMONIALS;
+        } catch (error) {
+            console.warn("Menggunakan fallback testimonial:", error.response?.data || error.message);
+            return FALLBACK_TESTIMONIALS;
+        }
+    },
+
     async fetchServices() {
         try {
             const query = `${SUPABASE_URL}/products?is_active=eq.true&select=*&order=created_at.asc`;

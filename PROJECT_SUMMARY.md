@@ -54,10 +54,11 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
   - create/update/delete customer
 - `src/services/laundryPortalAPI.js`
   - fetch services
+  - fetchTestimonials — mengambil data testimonial dengan fallback
   - fetch member orders
   - fetch order by invoice
   - create order + insert order items + order tracking
-  - fallback service data jika Supabase tidak tersedia
+  - fallback service dan testimonial data jika Supabase tidak tersedia
 - `src/services/adminOrdersAPI.js`
   - fetch admin orders
   - fetch order detail
@@ -81,9 +82,21 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 - `plan` default `Silver`
 - jika pembuatan user gagal, customer yang sudah dibuat berusaha dihapus sebagai rollback
 
+### Landing Page (Guest Home)
+
+- `src/pages/guest/Home.jsx` — landing page public
+- Menggunakan Tailwind utility classes (migrasi dari inline styles)
+- Hero section, Services grid, Testimonial carousel, CTA, Footer
+- Services dimuat via `fetchServices()` dengan skeleton loading
+- Testimonials dimuat via `fetchTestimonials()` dengan skeleton loading
+- Semua hover state menggunakan CSS Tailwind (bukan onMouseEnter/onMouseLeave)
+- Google Fonts DM Sans + DM Serif Display via `index.html`
+- Responsive: 3 card desktop, 2 tablet, 1 mobile
+
 ### Member Portal
 
 - `src/pages/MemberPortal.jsx` memuat layanan dari `laundryPortalAPI.fetchServices()`
+- Menggunakan komponen `ServiceCard` bersama (shared component) dengan variant="portal"
 - halaman memproses cart lokal dan checkout
 - checkout memanggil `laundryPortalAPI.createOrder`
 - `createOrder` membuat record di `orders`, `order_items`, dan `order_tracking`
@@ -99,6 +112,15 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 - `src/pages/Orders.jsx` memuat daftar order dari `adminOrdersAPI`
 - `src/pages/OrdersDetail.jsx` bisa memperbarui status order, status pembayaran, dan estimasi selesai
 - perubahan status menambah baris `order_tracking`
+
+## Shared Components
+
+- `src/components/ServiceCard.jsx` — digunakan oleh Landing Page (`variant="landing"`) dan Member Portal (`variant="portal"`)
+  - Mengekspor `iconMap`, `colorGradientMap`, `colorTailwindMap` — menghilangkan duplikasi
+- `src/components/ServiceCardSkeleton.jsx` — skeleton loading untuk services (dua varian)
+- `src/context/SearchContext.jsx` — global search state untuk Header/admin pages
+  - `SearchProvider` dipasang di `App.jsx` membungkus semua routes
+  - `Header.jsx` search bar sudah fungsional (value, onChange, clear button)
 
 ## Halaman yang Saat Ini Statis / Demo
 

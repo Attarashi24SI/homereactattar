@@ -3,34 +3,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import { useAuth } from "../context/AuthContext";
 import laundryPortalAPI, { FALLBACK_SERVICES, formatCurrency } from "../services/laundryPortalAPI";
+import ServiceCard from "../components/ServiceCard";
 import {
-    Bed,
     Check,
     Crown,
-    Droplets,
-    Footprints,
     LogOut,
     Minus,
     Package,
     Plus,
-    Shirt,
     ShoppingBag,
     ShoppingCart,
-    Sparkles,
     Tag,
     Trash2,
-    Zap,
 } from "lucide-react";
-
-const iconMap = { Droplets, Shirt, Zap, Bed, Footprints, Sparkles };
-const colorClass = {
-    teal: "from-teal-500 to-cyan-500",
-    cyan: "from-cyan-500 to-sky-500",
-    amber: "from-amber-500 to-orange-500",
-    indigo: "from-indigo-500 to-blue-500",
-    emerald: "from-emerald-500 to-teal-500",
-    violet: "from-violet-500 to-fuchsia-500",
-};
 
 export default function MemberPortal() {
     const { isLight } = useTheme();
@@ -222,6 +207,7 @@ export default function MemberPortal() {
                             <ServiceCard
                                 key={service.id}
                                 service={service}
+                                variant="portal"
                                 isLight={isLight}
                                 onAddToCart={addToCart}
                                 inCart={cart.some((item) => item.productId === service.id)}
@@ -294,34 +280,6 @@ export default function MemberPortal() {
                 </section>
             )}
         </main>
-    );
-}
-
-function ServiceCard({ service, isLight, onAddToCart, inCart }) {
-    const Icon = iconMap[service.icon] || Droplets;
-    const gradient = colorClass[service.color] || colorClass.teal;
-
-    return (
-        <div className={`group flex flex-col rounded-2xl border p-4 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl ${isLight ? "border-slate-200/80 bg-white shadow-slate-200/70 hover:border-teal-200" : "border-white/5 bg-[#06090f]/95 shadow-black/30 hover:border-teal-500/20"}`}>
-            <div className={`flex aspect-square items-center justify-center rounded-2xl bg-gradient-to-br ${gradient} text-white shadow-lg`}>
-                <Icon className="h-16 w-16" strokeWidth={1.8} />
-            </div>
-            <div className="flex flex-1 flex-col pt-4">
-                <span className={`mb-2 w-fit rounded-lg px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${isLight ? "bg-teal-50 text-teal-700" : "bg-teal-500/10 text-teal-300"}`}>{service.category}</span>
-                <h3 className={`text-sm font-bold leading-snug ${isLight ? "text-slate-900" : "text-white"}`}>{service.name}</h3>
-                <p className={`mt-1 text-xs leading-relaxed ${isLight ? "text-slate-500" : "text-gray-400"}`}>{service.description}</p>
-                <div className="mt-auto pt-4">
-                    <p className={`text-lg font-black ${isLight ? "text-teal-700" : "text-teal-400"}`}>{formatCurrency(service.price)}</p>
-                    <p className={`text-xs ${isLight ? "text-slate-400" : "text-gray-500"}`}>per {service.unit} · Estimasi {service.estimated_duration}</p>
-                </div>
-                <button
-                    onClick={() => onAddToCart(service)}
-                    className={`mt-3 flex w-full items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold transition ${inCart ? isLight ? "bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200" : "bg-emerald-500/15 text-emerald-300 ring-1 ring-emerald-500/30" : isLight ? "bg-teal-600 text-white shadow-md hover:bg-teal-700" : "bg-gradient-to-r from-cyan-500 to-teal-500 text-white shadow-md hover:shadow-lg"}`}
-                >
-                    {inCart ? <><Check className="h-4 w-4" /> Dalam Keranjang</> : <><Plus className="h-4 w-4" /> Masukkan Keranjang</>}
-                </button>
-            </div>
-        </div>
     );
 }
 

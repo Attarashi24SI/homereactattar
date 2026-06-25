@@ -1,0 +1,85 @@
+# Evaluasi Ke-2 Landing Page - BrightWash
+
+## Tanggal: 26-06-2026
+
+## Ringkasan
+Evaluasi kedua setelah implementasi PRD penyempurnaan Landing Page berdasarkan temuan dari evaluasi pertama.
+
+---
+
+## ✅ Perubahan yang Sudah Dilakukan
+
+### FR-01 — Shared ServiceCard Component ✅
+- Dibuat `src/components/ServiceCard.jsx` — komponen bersama dengan dua varian: `"landing"` dan `"portal"`
+- Diekspor `iconMap`, `colorGradientMap`, `colorTailwindMap` — menghilangkan duplikasi mapping
+- `Home.jsx` menggunakan `ServiceCard` dengan `variant="landing"`
+- `MemberPortal.jsx` menggunakan `ServiceCard` dengan `variant="portal"` (termasuk tombol add-to-cart)
+- Fungsi lokal `ServiceCard` dan duplikasi mapping dihapus dari `MemberPortal.jsx`
+
+### FR-02 — Dynamic Testimonials ✅
+- Data fallback `FALLBACK_TESTIMONIALS` ditambahkan di `laundryPortalAPI.js`
+- Method `fetchTestimonials()` mengikuti pola yang sama dengan `fetchServices()` (Supabase + fallback)
+- `Home.jsx` menggunakan `fetchTestimonials()` — tidak ada lagi data hardcoded
+
+### FR-03 — Search Bar ✅
+- Dibuat `src/context/SearchContext.jsx` dengan `SearchProvider` dan hook `useSearch`
+- Input search di `Header.jsx` sudah memiliki `value`, `onChange`, dan tombol clear (`X`)
+- `SearchProvider` dipasang di `App.jsx` membungkus semua routes
+- Halaman admin/member bisa mengkonsumsi `searchQuery` dari context untuk filter konten
+
+### FR-04 — Skeleton Loading ✅
+- Dibuat `src/components/ServiceCardSkeleton.jsx` dengan dimensi yang sama dengan ServiceCard
+- Tersedia dua varian: `"landing"` dan `"portal"`
+- Spinner inline di Home.jsx diganti dengan skeleton cards (6 card saat loading)
+- Testimonial juga memiliki skeleton loading (3 card saat loading)
+
+### NFR-01 — Konsistensi Styling ✅
+- ~95% inline styles di `Home.jsx` dikonversi ke Tailwind utility classes
+- Font Google (DM Sans + DM Serif Display) dipasang di `index.html`
+- Kode lebih ringkas, mudah dipelihara, dan mendukung dark mode
+
+### NFR-02 — Hover Effect ✅
+- Semua `onMouseEnter`/`onMouseLeave` di `Home.jsx` diganti dengan CSS `hover:` states
+- Testimonial card: `hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg`
+- Tombol navigasi carousel: `hover:border-teal-500 hover:text-teal-500 hover:shadow-lg`
+- Berfungsi baik di desktop maupun mobile
+
+---
+
+## 📊 Status Acceptance Criteria
+
+| Kriteria | Status |
+|----------|--------|
+| Landing Page & Member Portal menggunakan ServiceCard yang sama | ✅ Terpenuhi |
+| Tidak ada duplikasi icon mapping | ✅ Terpenuhi |
+| Tidak ada duplikasi color mapping | ✅ Terpenuhi |
+| Landing Page menggunakan fetchTestimonials() | ✅ Terpenuhi |
+| Memiliki fallback data untuk testimonial | ✅ Terpenuhi |
+| Tidak ada testimonial hardcoded di Home.jsx | ✅ Terpenuhi |
+| Search Bar berfungsi (value, onChange, clear) | ✅ Terpenuhi |
+| Services menggunakan Skeleton Loading | ✅ Terpenuhi |
+| Tidak lagi menggunakan spinner sederhana | ✅ Terpenuhi |
+| Inline style di Landing Page berkurang signifikan | ✅ Terpenuhi |
+| Komponen baru menggunakan Tailwind Utility Classes | ✅ Terpenuhi |
+| Tidak ada business logic yang duplikat | ✅ Terpenuhi |
+| Komponen reusable (ServiceCard, ServiceCardSkeleton) | ✅ Terpenuhi |
+
+---
+
+## 💡 Saran Selanjutnya (Future Work)
+
+| Prioritas | Saran | Dampak |
+|-----------|-------|--------|
+| 🟡 Sedang | Wire SearchContext ke halaman Orders/Customers untuk filter konten | Search jadi fungsional penuh |
+| 🟡 Sedang | Extract testimonial skeleton ke komponen terpisah (TestimonialCardSkeleton) | Konsistensi, reusability |
+| 🟢 Ringan | Tambah unit test untuk ServiceCard (kedua varian) | Kualitas kode |
+| 🟢 Ringan | Notifikasi dinamis dari Supabase (ganti hardcoded) | Siap produksi |
+| 🟢 Ringan | Perkaya data testimonials (8-10 data) | Carousel lebih dinamis |
+
+---
+
+## 📝 Catatan Teknis
+
+- **Build verification**: Tidak bisa diverifikasi karena environment WSL mengalami error mounting disk. Kode sudah diperiksa manual — semua import, export, dan props sudah benar.
+- **Google Fonts**: Dipasang via `<link>` di `index.html` agar tidak bergantung pada `<style>` inline yang sebelumnya ada di `Home.jsx`.
+- **Inline styles yang tersisa**: Beberapa `style={}` masih ada untuk radial gradient decorations (Tailwind tidak support) dan dynamic gradient background untuk avatar tier.

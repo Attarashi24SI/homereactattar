@@ -1,65 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import laundryPortalAPI, { formatCurrency } from "../../services/laundryPortalAPI";
-import {
-    Bed,
-    Droplets,
-    Footprints,
-    Shirt,
-    Sparkles,
-    Star,
-    Zap,
-} from "lucide-react";
-
-const iconMap = { Droplets, Shirt, Zap, Bed, Footprints, Sparkles };
-const colorMap = {
-    teal: "linear-gradient(135deg, #14b8a6, #0d9488)",
-    cyan: "linear-gradient(135deg, #06b6d4, #0e7490)",
-    amber: "linear-gradient(135deg, #f59e0b, #d97706)",
-    indigo: "linear-gradient(135deg, #6366f1, #4f46e5)",
-    emerald: "linear-gradient(135deg, #10b981, #059669)",
-    violet: "linear-gradient(135deg, #8b5cf6, #7c3aed)",
-};
-
-const defaultGradient = "linear-gradient(135deg, #14b8a6, #0d9488)";
-
-const testimonials = [
-    {
-        name: "Sarah Wijaya",
-        rating: 5,
-        text: "Very fast service and the clothes were perfectly clean. Highly recommended!",
-    },
-    {
-        name: "Budi Santoso",
-        rating: 5,
-        text: "Pelayanan sangat memuaskan, pakaian wangi dan rapi. Sudah langganan sejak 3 bulan lalu.",
-    },
-    {
-        name: "Dian Permata",
-        rating: 4,
-        text: "Super express 3 jam benar-benar tepat waktu. Cocok untuk kebutuhan mendesak.",
-    },
-    {
-        name: "Rina Marlina",
-        rating: 5,
-        text: "Harga terjangkau dengan kualitas premium. Tim BrightWash sangat profesional.",
-    },
-    {
-        name: "Andi Pratama",
-        rating: 4,
-        text: "Layanan setrika premiumnya luar biasa. Rapi dan wangi tahan lama.",
-    },
-];
+import laundryPortalAPI from "../../services/laundryPortalAPI";
+import ServiceCard from "../../components/ServiceCard";
+import ServiceCardSkeleton from "../../components/ServiceCardSkeleton";
+import { Star } from "lucide-react";
 
 export default function Home() {
     const { isLoggedIn, user, logout } = useAuth();
     const [services, setServices] = useState([]);
+    const [testimonials, setTestimonials] = useState([]);
+    const [servicesLoading, setServicesLoading] = useState(true);
+    const [testimonialsLoading, setTestimonialsLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(0);
     const [cardsPerPage, setCardsPerPage] = useState(3);
 
     useEffect(() => {
-        laundryPortalAPI.fetchServices().then(setServices);
+        laundryPortalAPI.fetchServices().then((data) => {
+            setServices(data);
+            setServicesLoading(false);
+        });
+    }, []);
+
+    useEffect(() => {
+        laundryPortalAPI.fetchTestimonials().then((data) => {
+            setTestimonials(data);
+            setTestimonialsLoading(false);
+        });
     }, []);
 
     // Responsive cards per page
@@ -90,7 +57,7 @@ export default function Home() {
         if (currentPage >= totalPages) {
             setCurrentPage(Math.max(0, totalPages - 1));
         }
-    }, [totalPages]);
+    }, [currentPage, totalPages]);
 
     // Auto-rotation
     useEffect(() => {
@@ -101,17 +68,17 @@ export default function Home() {
         return () => clearInterval(interval);
     }, [totalPages]);
 
-    const goToPage = (index) => {
+    const goToPage = useCallback((index) => {
         setCurrentPage(index);
-    };
+    }, []);
 
-    const prevPage = () => {
+    const prevPage = useCallback(() => {
         setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
-    };
+    }, [totalPages]);
 
-    const nextPage = () => {
+    const nextPage = useCallback(() => {
         setCurrentPage((prev) => (prev + 1) % totalPages);
-    };
+    }, [totalPages]);
 
     const renderStars = (rating) => {
         return Array.from({ length: 5 }, (_, i) => (
@@ -121,49 +88,30 @@ export default function Home() {
                 fill={i < rating ? "#f59e0b" : "transparent"}
                 stroke={i < rating ? "#f59e0b" : "#d1d5db"}
                 strokeWidth={1.5}
-                style={{ transition: "all 0.2s" }}
+                className="transition-all duration-200"
             />
         ));
     };
 
     return (
-        <div className="min-h-screen" style={{ background: "#ffffff", fontFamily: "'DM Sans', sans-serif" }}>
-            <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display@0;1&display=swap');
-            `}</style>
-
-            {/* HEADER */}
-            <header
-                style={{
-                    position: "sticky",
-                    top: 0,
-                    zIndex: 50,
-                    background: "rgba(255,255,255,0.92)",
-                    backdropFilter: "blur(12px)",
-                    borderBottom: "1px solid #ccfbf1",
-                }}
-            >
-                <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+        <div className="min-h-screen bg-white font-['DM_Sans',sans-serif]">
+            {/* ── HEADER ── */}
+            <header className="sticky top-0 z-50 border-b border-teal-100 bg-white/90 backdrop-blur-md">
+                <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center gap-2" style={{ textDecoration: "none" }}>
+                    <Link to="/" className="flex items-center gap-2 no-underline">
                         <img
                             src="/img/BrightWashNoBg.png"
                             alt="BrightWash"
-                            style={{ width: 36, height: 36, objectFit: "contain" }}
+                            className="h-9 w-9 object-contain"
                         />
-                        <span
-                            style={{
-                                fontFamily: "'DM Serif Display', serif",
-                                fontSize: "1.3rem",
-                                color: "#0f766e",
-                            }}
-                        >
+                        <span className="font-['DM_Serif_Display',serif] text-[1.3rem] text-teal-700 no-underline">
                             BrightWash
                         </span>
                     </Link>
 
                     {/* Nav Links */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden items-center gap-8 md:flex">
                         {[
                             { label: "Layanan", href: "#layanan" },
                             { label: "Testimoni", href: "#testimoni" },
@@ -172,15 +120,7 @@ export default function Home() {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                style={{
-                                    fontSize: "0.875rem",
-                                    fontWeight: 500,
-                                    color: "#374151",
-                                    textDecoration: "none",
-                                    transition: "color 0.2s",
-                                }}
-                                onMouseEnter={(e) => (e.target.style.color = "#14b8a6")}
-                                onMouseLeave={(e) => (e.target.style.color = "#374151")}
+                                className="text-sm font-medium text-gray-700 no-underline transition-colors duration-200 hover:text-teal-500"
                             >
                                 {item.label}
                             </a>
@@ -193,61 +133,23 @@ export default function Home() {
                             <>
                                 <Link
                                     to="/member-portal"
-                                    style={{
-                                        padding: "8px 20px",
-                                        fontSize: "0.875rem",
-                                        fontWeight: 500,
-                                        color: "#ffffff",
-                                        background: "#14b8a6",
-                                        border: "1.5px solid #14b8a6",
-                                        borderRadius: 10,
-                                        textDecoration: "none",
-                                        transition: "all 0.2s",
-                                        boxShadow: "0 4px 14px rgba(20,184,166,0.25)",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.background = "#0f766e";
-                                        e.currentTarget.style.borderColor = "#0f766e";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.background = "#14b8a6";
-                                        e.currentTarget.style.borderColor = "#14b8a6";
-                                    }}
+                                    className="rounded-xl border-[1.5px] border-teal-500 bg-teal-500 px-5 py-2 text-sm font-medium text-white no-underline shadow-lg shadow-teal-500/25 transition-all duration-200 hover:border-teal-700 hover:bg-teal-700"
                                 >
                                     Member Portal
                                 </Link>
 
                                 {/* Profile Avatar + Info */}
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: 10,
-                                        padding: "6px 14px 6px 6px",
-                                        borderRadius: 14,
-                                        border: "1.5px solid #ccfbf1",
-                                        background: "#f0fdfa",
-                                        transition: "all 0.2s",
-                                        cursor: "default",
-                                    }}
-                                >
+                                <div className="flex cursor-default items-center gap-2.5 rounded-xl border-[1.5px] border-teal-100 bg-teal-50 py-1.5 pl-1.5 pr-3.5 transition-all duration-200">
                                     {/* Avatar */}
                                     <div
+                                        className="flex h-9 w-9 items-center justify-center rounded-xl text-sm font-bold text-white shadow-md"
                                         style={{
-                                            width: 36,
-                                            height: 36,
-                                            borderRadius: 10,
-                                            background: user?.plan === "platinum"
-                                                ? "linear-gradient(135deg, #475569, #1e293b)"
-                                                : user?.plan === "gold"
-                                                    ? "linear-gradient(135deg, #f59e0b, #d97706)"
-                                                    : "linear-gradient(135deg, #94a3b8, #64748b)",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            fontSize: "0.85rem",
-                                            fontWeight: 700,
-                                            color: "#ffffff",
+                                            background:
+                                                user?.plan === "platinum"
+                                                    ? "linear-gradient(135deg, #475569, #1e293b)"
+                                                    : user?.plan === "gold"
+                                                        ? "linear-gradient(135deg, #f59e0b, #d97706)"
+                                                        : "linear-gradient(135deg, #94a3b8, #64748b)",
                                             boxShadow: "0 2px 8px rgba(20,184,166,0.2)",
                                         }}
                                     >
@@ -255,21 +157,19 @@ export default function Home() {
                                     </div>
 
                                     {/* Name + Tier */}
-                                    <div style={{ lineHeight: 1.3 }}>
-                                        <p style={{ fontSize: "0.8rem", fontWeight: 600, color: "#0f766e" }}>
+                                    <div className="leading-tight">
+                                        <p className="text-[0.8rem] font-semibold text-teal-700">
                                             {user?.fullname || user?.username}
                                         </p>
                                         <span
+                                            className="text-[0.65rem] font-bold uppercase tracking-wider"
                                             style={{
-                                                fontSize: "0.65rem",
-                                                fontWeight: 700,
-                                                textTransform: "uppercase",
-                                                letterSpacing: "0.05em",
-                                                color: user?.plan === "platinum"
-                                                    ? "#475569"
-                                                    : user?.plan === "gold"
-                                                        ? "#d97706"
-                                                        : "#64748b",
+                                                color:
+                                                    user?.plan === "platinum"
+                                                        ? "#475569"
+                                                        : user?.plan === "gold"
+                                                            ? "#d97706"
+                                                            : "#64748b",
                                             }}
                                         >
                                             {user?.membershipData?.membershipLevel || user?.plan || "Member"}
@@ -279,29 +179,22 @@ export default function Home() {
 
                                 {/* Logout */}
                                 <button
-                                    onClick={() => { logout(); }}
+                                    onClick={() => {
+                                        logout();
+                                    }}
                                     title="Logout"
-                                    style={{
-                                        width: 36,
-                                        height: 36,
-                                        display: "flex",
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                        borderRadius: 10,
-                                        border: "1.5px solid #fecaca",
-                                        background: "transparent",
-                                        cursor: "pointer",
-                                        transition: "all 0.2s",
-                                        color: "#ef4444",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.background = "#fef2f2";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.background = "transparent";
-                                    }}
+                                    className="flex h-9 w-9 items-center justify-center rounded-xl border-[1.5px] border-red-200 bg-transparent text-red-500 transition-all duration-200 hover:bg-red-50"
                                 >
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    >
                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
                                         <polyline points="16 17 21 12 16 7" />
                                         <line x1="21" y1="12" x2="9" y2="12" />
@@ -312,48 +205,13 @@ export default function Home() {
                             <>
                                 <Link
                                     to="/login"
-                                    style={{
-                                        padding: "8px 20px",
-                                        fontSize: "0.875rem",
-                                        fontWeight: 500,
-                                        color: "#14b8a6",
-                                        border: "1.5px solid #14b8a6",
-                                        borderRadius: 10,
-                                        textDecoration: "none",
-                                        transition: "all 0.2s",
-                                        background: "transparent",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.background = "#f0fdfa";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.background = "transparent";
-                                    }}
+                                    className="rounded-xl border-[1.5px] border-teal-500 bg-transparent px-5 py-2 text-sm font-medium text-teal-500 no-underline transition-all duration-200 hover:bg-teal-50"
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     to="/register"
-                                    style={{
-                                        padding: "8px 20px",
-                                        fontSize: "0.875rem",
-                                        fontWeight: 500,
-                                        color: "#ffffff",
-                                        background: "#14b8a6",
-                                        border: "1.5px solid #14b8a6",
-                                        borderRadius: 10,
-                                        textDecoration: "none",
-                                        transition: "all 0.2s",
-                                        boxShadow: "0 4px 14px rgba(20,184,166,0.25)",
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.background = "#0f766e";
-                                        e.currentTarget.style.borderColor = "#0f766e";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.background = "#14b8a6";
-                                        e.currentTarget.style.borderColor = "#14b8a6";
-                                    }}
+                                    className="rounded-xl border-[1.5px] border-teal-500 bg-teal-500 px-5 py-2 text-sm font-medium text-white no-underline shadow-lg shadow-teal-500/25 transition-all duration-200 hover:border-teal-700 hover:bg-teal-700"
                                 >
                                     Register
                                 </Link>
@@ -363,69 +221,37 @@ export default function Home() {
                 </div>
             </header>
 
-            {/* HERO */}
+            {/* ── HERO ── */}
             <section className="relative overflow-hidden">
+                {/* Decorative blobs */}
                 <div
+                    className="pointer-events-none absolute -top-28 right-[-80px] h-[400px] w-[400px] rounded-full"
                     style={{
-                        position: "absolute",
-                        top: -120,
-                        right: -80,
-                        width: 400,
-                        height: 400,
-                        borderRadius: "50%",
-                        background: "radial-gradient(circle, rgba(20,184,166,0.08) 0%, transparent 70%)",
+                        background:
+                            "radial-gradient(circle, rgba(20,184,166,0.08) 0%, transparent 70%)",
                     }}
                 />
                 <div
+                    className="pointer-events-none absolute -bottom-14 left-[-40px] h-[250px] w-[250px] rounded-full"
                     style={{
-                        position: "absolute",
-                        bottom: -60,
-                        left: -40,
-                        width: 250,
-                        height: 250,
-                        borderRadius: "50%",
-                        background: "radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%)",
+                        background:
+                            "radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%)",
                     }}
                 />
 
-                <div className="max-w-6xl mx-auto px-6 py-20 md:py-28 relative">
+                <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
                     <div className="max-w-2xl">
-                        <div
-                            className="inline-block mb-4 px-4 py-1.5 rounded-full"
-                            style={{
-                                background: "#f0fdfa",
-                                border: "1px solid #ccfbf1",
-                                fontSize: "0.8rem",
-                                fontWeight: 500,
-                                color: "#0f766e",
-                            }}
-                        >
+                        <div className="mb-4 inline-block rounded-full border border-teal-100 bg-teal-50 px-4 py-1.5 text-[0.8rem] font-medium text-teal-700">
                             Laundry Terpercaya #1
                         </div>
 
-                        <h1
-                            style={{
-                                fontFamily: "'DM Serif Display', serif",
-                                fontSize: "clamp(2rem, 5vw, 3.2rem)",
-                                color: "#1e293b",
-                                lineHeight: 1.15,
-                                marginBottom: 20,
-                            }}
-                        >
+                        <h1 className="mb-5 font-['DM_Serif_Display',serif] text-[clamp(2rem,5vw,3.2rem)] leading-tight text-slate-800">
                             Pakaian Bersih,
                             <br />
-                            <span style={{ color: "#14b8a6" }}>Hidup Lebih Nyaman</span>
+                            <span className="text-teal-500">Hidup Lebih Nyaman</span>
                         </h1>
 
-                        <p
-                            style={{
-                                fontSize: "1.05rem",
-                                color: "#64748b",
-                                lineHeight: 1.7,
-                                maxWidth: 480,
-                                marginBottom: 32,
-                            }}
-                        >
+                        <p className="mb-8 max-w-[480px] text-[1.05rem] leading-relaxed text-slate-500">
                             BrightWash menyediakan layanan laundry profesional dengan
                             kualitas terbaik. Serahkan urusan cuci pakaian Anda, kami
                             yang kerjakan dengan sepenuh hati.
@@ -434,81 +260,42 @@ export default function Home() {
                         <div className="flex flex-wrap gap-4">
                             <Link
                                 to="/register"
-                                style={{
-                                    display: "inline-flex",
-                                    alignItems: "center",
-                                    gap: 8,
-                                    padding: "14px 28px",
-                                    background: "#14b8a6",
-                                    color: "#ffffff",
-                                    borderRadius: 12,
-                                    fontSize: "0.95rem",
-                                    fontWeight: 600,
-                                    textDecoration: "none",
-                                    boxShadow: "0 8px 24px rgba(20,184,166,0.3)",
-                                    transition: "all 0.2s",
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.background = "#0f766e";
-                                    e.currentTarget.style.transform = "translateY(-2px)";
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.background = "#14b8a6";
-                                    e.currentTarget.style.transform = "translateY(0)";
-                                }}
+                                className="inline-flex items-center gap-2 rounded-xl bg-teal-500 px-7 py-3.5 text-[0.95rem] font-semibold text-white no-underline shadow-lg shadow-teal-500/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-teal-700"
                             >
                                 Mulai Sekarang
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
                                     <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </Link>
                             <a
                                 href="#layanan"
-                                style={{
-                                    display: "inline-flex",
-                                    alignItems: "center",
-                                    gap: 8,
-                                    padding: "14px 28px",
-                                    background: "transparent",
-                                    color: "#14b8a6",
-                                    border: "1.5px solid #99f6e4",
-                                    borderRadius: 12,
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    textDecoration: "none",
-                                    transition: "all 0.2s",
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.background = "#f0fdfa";
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.background = "transparent";
-                                }}
+                                className="inline-flex items-center gap-2 rounded-xl border-[1.5px] border-teal-200 bg-transparent px-7 py-3.5 text-[0.95rem] font-medium text-teal-500 no-underline transition-all duration-200 hover:bg-teal-50"
                             >
                                 Lihat Layanan
                             </a>
                         </div>
 
                         {/* Stats */}
-                        <div className="flex gap-10 mt-12">
+                        <div className="mt-12 flex gap-10">
                             {[
                                 { num: "2.500+", label: "Pelanggan Puas" },
                                 { num: "15.000+", label: "Order Selesai" },
                                 { num: "4.9", label: "Rating" },
                             ].map((s) => (
                                 <div key={s.label}>
-                                    <p
-                                        style={{
-                                            fontFamily: "'DM Serif Display', serif",
-                                            fontSize: "1.5rem",
-                                            color: "#14b8a6",
-                                        }}
-                                    >
+                                    <p className="font-['DM_Serif_Display',serif] text-2xl text-teal-500">
                                         {s.num}
                                     </p>
-                                    <p style={{ fontSize: "0.8rem", color: "#94a3b8" }}>
-                                        {s.label}
-                                    </p>
+                                    <p className="text-[0.8rem] text-slate-400">{s.label}</p>
                                 </div>
                             ))}
                         </div>
@@ -516,476 +303,225 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* SERVICES */}
+            {/* ── SERVICES ── */}
             <section
                 id="layanan"
-                style={{
-                    background: "#f8fffe",
-                    borderTop: "1px solid #ccfbf1",
-                    borderBottom: "1px solid #ccfbf1",
-                }}
+                className="border-y border-teal-100 bg-teal-50/30"
             >
-                <div className="max-w-6xl mx-auto px-6 py-20">
-                    <div className="text-center mb-14">
-                        <h2
-                            style={{
-                                fontFamily: "'DM Serif Display', serif",
-                                fontSize: "2rem",
-                                color: "#1e293b",
-                                marginBottom: 8,
-                            }}
-                        >
+                <div className="mx-auto max-w-6xl px-6 py-20">
+                    <div className="mb-14 text-center">
+                        <h2 className="mb-2 font-['DM_Serif_Display',serif] text-3xl text-slate-800">
                             Layanan Kami
                         </h2>
-                        <p style={{ color: "#64748b", fontSize: "0.95rem" }}>
+                        <p className="text-[0.95rem] text-slate-500">
                             Berbagai pilihan layanan laundry untuk kebutuhan Anda
                         </p>
                     </div>
 
-                    {services.length === 0 ? (
-                        <div className="flex items-center justify-center py-12">
-                            <div style={{ textAlign: "center" }}>
-                                <div
-                                    style={{
-                                        width: 40,
-                                        height: 40,
-                                        borderRadius: "50%",
-                                        border: "3px solid #ccfbf1",
-                                        borderTopColor: "#14b8a6",
-                                        animation: "spin 0.8s linear infinite",
-                                        margin: "0 auto 16px",
-                                    }}
-                                />
-                                <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-                                <p style={{ color: "#94a3b8", fontSize: "0.9rem" }}>Memuat layanan...</p>
-                            </div>
+                    {servicesLoading ? (
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            {Array.from({ length: 6 }).map((_, i) => (
+                                <ServiceCardSkeleton key={i} variant="landing" />
+                            ))}
                         </div>
                     ) : (
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                            {services.map((service) => {
-                                const Icon = iconMap[service.icon] || Droplets;
-                                const gradient = colorMap[service.color] || defaultGradient;
-                            return (
-                                        <div
-                                            key={service.id}
-                                            style={{
-                                                background: "#ffffff",
-                                                border: "1px solid #e2e8f0",
-                                                borderRadius: 16,
-                                                padding: "28px 24px",
-                                                transition: "all 0.25s",
-                                                cursor: "default",
-                                                display: "flex",
-                                                flexDirection: "column",
-                                                minHeight: 340,
-                                            }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.borderColor = "#99f6e4";
-                                            e.currentTarget.style.boxShadow = "0 12px 32px rgba(20,184,166,0.1)";
-                                            e.currentTarget.style.transform = "translateY(-4px)";
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.borderColor = "#e2e8f0";
-                                            e.currentTarget.style.boxShadow = "none";
-                                            e.currentTarget.style.transform = "translateY(0)";
-                                        }}
-                                    >
-                                        <div
-                                            style={{
-                                                width: 48,
-                                                height: 48,
-                                                borderRadius: 12,
-                                                background: gradient,
-                                                display: "flex",
-                                                alignItems: "center",
-                                                justifyContent: "center",
-                                                marginBottom: 16,
-                                                color: "#ffffff",
-                                                boxShadow: "0 4px 12px rgba(20,184,166,0.2)",
-                                            }}
-                                        >
-                                            <Icon size={24} strokeWidth={1.8} />
-                                        </div>
-
-                                        {service.category && (
-                                            <span
-                                                style={{
-                                                    display: "inline-block",
-                                                    width: "fit-content",
-                                                    padding: "4px 12px",
-                                                    borderRadius: 8,
-                                                    fontSize: "0.7rem",
-                                                    fontWeight: 700,
-                                                    textTransform: "uppercase",
-                                                    letterSpacing: "0.05em",
-                                                    background: "#f0fdfa",
-                                                    color: "#0f766e",
-                                                    marginBottom: 10,
-                                                }}
-                                            >
-                                                {service.category}
-                                            </span>
-                                        )}
-
-                                        <h3
-                                            style={{
-                                                fontWeight: 600,
-                                                fontSize: "1rem",
-                                                color: "#1e293b",
-                                                marginBottom: 8,
-                                            }}
-                                        >
-                                            {service.name}
-                                        </h3>
-                                        <p
-                                            style={{
-                                                fontSize: "0.85rem",
-                                                color: "#64748b",
-                                                lineHeight: 1.6,
-                                                flex: 1,
-                                            }}
-                                        >
-                                            {service.description}
-                                        </p>
-
-                                        <div style={{ marginTop: 16, paddingTop: 16, borderTop: "1px solid #f1f5f9" }}>
-                                            <p
-                                                style={{
-                                                    fontSize: "1.1rem",
-                                                    fontWeight: 700,
-                                                    color: "#0f766e",
-                                                }}
-                                            >
-                                                {formatCurrency(service.price)}
-                                            </p>
-                                            <p
-                                                style={{
-                                                    fontSize: "0.75rem",
-                                                    color: "#94a3b8",
-                                                    marginTop: 2,
-                                                }}
-                                            >
-                                                per {service.unit}
-                                                {service.estimated_duration ? ` · ${service.estimated_duration}` : ""}
-                                            </p>
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                            {services.map((service) => (
+                                <ServiceCard
+                                    key={service.id}
+                                    service={service}
+                                    variant="landing"
+                                />
+                            ))}
                         </div>
                     )}
                 </div>
             </section>
 
-            {/* TESTIMONIALS */}
-            <section id="testimoni" className="max-w-6xl mx-auto px-6 py-20">
-                <div className="text-center mb-14">
-                    <h2
-                        style={{
-                            fontFamily: "'DM Serif Display', serif",
-                            fontSize: "2rem",
-                            color: "#1e293b",
-                            marginBottom: 8,
-                        }}
-                    >
+            {/* ── TESTIMONIALS ── */}
+            <section id="testimoni" className="mx-auto max-w-6xl px-6 py-20">
+                <div className="mb-14 text-center">
+                    <h2 className="mb-2 font-['DM_Serif_Display',serif] text-3xl text-slate-800">
                         Apa Kata Pelanggan
                     </h2>
-                    <p style={{ color: "#64748b", fontSize: "0.95rem" }}>
+                    <p className="text-[0.95rem] text-slate-500">
                         Kepercayaan dan kepuasan Anda adalah prioritas utama kami
                     </p>
                 </div>
 
-                <div className="relative">
-                    {/* Previous arrow */}
-                    <button
-                        onClick={prevPage}
-                        className="hidden md:flex items-center justify-center"
-                        style={{
-                            position: "absolute",
-                            left: -20,
-                            top: "50%",
-                            transform: "translateY(-50%)",
-                            zIndex: 10,
-                            width: 44,
-                            height: 44,
-                            borderRadius: "50%",
-                            border: "1.5px solid #e2e8f0",
-                            background: "#ffffff",
-                            cursor: "pointer",
-                            color: "#64748b",
-                            transition: "all 0.2s",
-                            boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.borderColor = "#14b8a6";
-                            e.currentTarget.style.color = "#14b8a6";
-                            e.currentTarget.style.boxShadow = "0 4px 12px rgba(20,184,166,0.15)";
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.borderColor = "#e2e8f0";
-                            e.currentTarget.style.color = "#64748b";
-                            e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)";
-                        }}
-                        aria-label="Previous testimonials"
-                    >
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M15 18l-6-6 6-6" />
-                        </svg>
-                    </button>
-
-                    {/* Carousel track */}
-                    <div className="overflow-hidden" style={{ margin: "0 4px" }}>
-                        <div
-                            className="flex transition-transform duration-500 ease-in-out"
-                            style={{ transform: `translateX(-${currentPage * 100}%)` }}
-                        >
-                            {pages.map((page, pageIdx) => (
-                                <div
-                                    key={pageIdx}
-                                    className="flex-shrink-0 w-full grid gap-6"
-                                    style={{
-                                        gridTemplateColumns: `repeat(${Math.min(page.length, cardsPerPage)}, minmax(0, 1fr))`,
-                                        paddingRight: 0,
-                                    }}
-                                >
-                                    {page.map((testimonial) => (
+                {testimonialsLoading ? (
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        {Array.from({ length: 3 }).map((_, i) => (
+                            <div
+                                key={i}
+                                className="flex min-h-[280px] animate-pulse flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
+                            >
+                                <div className="mb-4 h-8 w-8 rounded-full bg-slate-200" />
+                                <div className="mb-4 flex gap-1">
+                                    {Array.from({ length: 5 }).map((_, j) => (
                                         <div
-                                            key={testimonial.name}
-                                            style={{
-                                                background: "#ffffff",
-                                                border: "1px solid #e2e8f0",
-                                                borderRadius: 20,
-                                                padding: "32px 24px",
-                                                textAlign: "center",
-                                                height: "100%",
-                                                display: "flex",
-                                                flexDirection: "column",
-                                                alignItems: "center",
-                                                justifyContent: "center",
-                                                boxShadow: "0 4px 16px rgba(0,0,0,0.04)",
-                                                transition: "all 0.3s ease",
-                                                minHeight: 280,
-                                                position: "relative",
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.borderColor = "#99f6e4";
-                                                e.currentTarget.style.boxShadow = "0 12px 32px rgba(20,184,166,0.1)";
-                                                e.currentTarget.style.transform = "translateY(-4px)";
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.borderColor = "#e2e8f0";
-                                                e.currentTarget.style.boxShadow = "0 4px 16px rgba(0,0,0,0.04)";
-                                                e.currentTarget.style.transform = "translateY(0)";
-                                            }}
-                                        >
-                                            {/* Decorative quote */}
-                                            <div
-                                                style={{
-                                                    fontSize: "2.5rem",
-                                                    lineHeight: 1,
-                                                    color: "#ccfbf1",
-                                                    fontFamily: "'DM Serif Display', serif",
-                                                    userSelect: "none",
-                                                    marginBottom: 8,
-                                                }}
-                                            >
-                                                &ldquo;
-                                            </div>
-
-                                            {/* Stars */}
-                                            <div style={{ display: "flex", gap: 3, justifyContent: "center", marginBottom: 14 }}>
-                                                {renderStars(testimonial.rating)}
-                                            </div>
-
-                                            {/* Feedback */}
-                                            <p
-                                                style={{
-                                                    fontSize: "0.88rem",
-                                                    color: "#475569",
-                                                    lineHeight: 1.6,
-                                                    fontStyle: "italic",
-                                                    flex: 1,
-                                                    marginBottom: 16,
-                                                    maxWidth: 320,
-                                                }}
-                                            >
-                                                {testimonial.text}
-                                            </p>
-
-                                            {/* Name */}
-                                            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                                                <div
-                                                    style={{
-                                                        width: 5,
-                                                        height: 5,
-                                                        borderRadius: "50%",
-                                                        background: "#14b8a6",
-                                                    }}
-                                                />
-                                                <p style={{ fontWeight: 600, fontSize: "0.85rem", color: "#0f766e" }}>
-                                                    {testimonial.name}
-                                                </p>
-                                            </div>
-                                        </div>
+                                            key={j}
+                                            className="h-4 w-4 rounded bg-slate-200"
+                                        />
                                     ))}
                                 </div>
-                            ))}
-                        </div>
+                                <div className="mb-4 space-y-2">
+                                    <div className="h-3 w-60 rounded bg-slate-100" />
+                                    <div className="h-3 w-48 rounded bg-slate-100" />
+                                </div>
+                                <div className="h-4 w-24 rounded bg-slate-200" />
+                            </div>
+                        ))}
                     </div>
+                ) : (
+                    <div className="relative">
+                        {/* Previous arrow */}
+                        <button
+                            onClick={prevPage}
+                            className="absolute -left-5 top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition-all duration-200 hover:border-teal-500 hover:text-teal-500 hover:shadow-lg hover:shadow-teal-500/15 md:flex"
+                            aria-label="Previous testimonials"
+                        >
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
 
-                    {/* Next arrow */}
-                    <button
-                        onClick={nextPage}
-                        className="hidden md:flex items-center justify-center"
-                        style={{
-                            position: "absolute",
-                            right: -20,
-                            top: "50%",
-                            transform: "translateY(-50%)",
-                            zIndex: 10,
-                            width: 44,
-                            height: 44,
-                            borderRadius: "50%",
-                            border: "1.5px solid #e2e8f0",
-                            background: "#ffffff",
-                            cursor: "pointer",
-                            color: "#64748b",
-                            transition: "all 0.2s",
-                            boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.borderColor = "#14b8a6";
-                            e.currentTarget.style.color = "#14b8a6";
-                            e.currentTarget.style.boxShadow = "0 4px 12px rgba(20,184,166,0.15)";
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.borderColor = "#e2e8f0";
-                            e.currentTarget.style.color = "#64748b";
-                            e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)";
-                        }}
-                        aria-label="Next testimonials"
-                    >
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>
-                    </button>
-                </div>
+                        {/* Carousel track */}
+                        <div className="mx-0.5 overflow-hidden">
+                            <div
+                                className="flex transition-transform duration-500 ease-in-out"
+                                style={{
+                                    transform: `translateX(-${currentPage * 100}%)`,
+                                }}
+                            >
+                                {pages.map((page, pageIdx) => (
+                                    <div
+                                        key={pageIdx}
+                                        className="flex w-full flex-shrink-0 gap-6"
+                                        style={{
+                                            gridTemplateColumns: `repeat(${Math.min(page.length, cardsPerPage)}, minmax(0, 1fr))`,
+                                        }}
+                                    >
+                                        {page.map((testimonial) => (
+                                            <div
+                                                key={testimonial.id || testimonial.name}
+                                                className="relative flex min-h-[280px] flex-1 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg hover:shadow-teal-100/50"
+                                            >
+                                                {/* Decorative quote */}
+                                                <div className="mb-2 select-none font-['DM_Serif_Display',serif] text-[2.5rem] leading-none text-teal-100">
+                                                    &ldquo;
+                                                </div>
+
+                                                {/* Stars */}
+                                                <div className="mb-3.5 flex justify-center gap-0.5">
+                                                    {renderStars(testimonial.rating)}
+                                                </div>
+
+                                                {/* Feedback */}
+                                                <p className="mb-4 max-w-[320px] flex-1 text-[0.88rem] italic leading-relaxed text-slate-600">
+                                                    {testimonial.text}
+                                                </p>
+
+                                                {/* Name */}
+                                                <div className="flex items-center gap-2">
+                                                    <div className="h-1.5 w-1.5 rounded-full bg-teal-500" />
+                                                    <p className="text-[0.85rem] font-semibold text-teal-700">
+                                                        {testimonial.name}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Next arrow */}
+                        <button
+                            onClick={nextPage}
+                            className="absolute -right-5 top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm transition-all duration-200 hover:border-teal-500 hover:text-teal-500 hover:shadow-lg hover:shadow-teal-500/15 md:flex"
+                            aria-label="Next testimonials"
+                        >
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                )}
 
                 {/* Dot indicators */}
-                <div
-                    style={{
-                        display: "flex",
-                        gap: 8,
-                        justifyContent: "center",
-                        marginTop: 24,
-                    }}
-                >
-                    {Array.from({ length: totalPages }, (_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToPage(index)}
-                            style={{
-                                width: index === currentPage ? 28 : 10,
-                                height: 10,
-                                borderRadius: 5,
-                                border: "none",
-                                background: index === currentPage ? "#14b8a6" : "#e2e8f0",
-                                cursor: "pointer",
-                                transition: "all 0.3s ease",
-                                padding: 0,
-                            }}
-                            aria-label={`Go to testimonial page ${index + 1}`}
-                        />
-                    ))}
-                </div>
+                {!testimonialsLoading && totalPages > 1 && (
+                    <div className="mt-6 flex justify-center gap-2">
+                        {Array.from({ length: totalPages }, (_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => goToPage(index)}
+                                className="h-2.5 rounded-full border-none p-0 transition-all duration-300"
+                                style={{
+                                    width: index === currentPage ? 28 : 10,
+                                    background:
+                                        index === currentPage ? "#14b8a6" : "#e2e8f0",
+                                }}
+                                aria-label={`Go to testimonial page ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+                )}
             </section>
 
-            {/* CTA */}
-            <section
-                id="tentang"
-                style={{
-                    background: "linear-gradient(135deg, #0f766e 0%, #14b8a6 50%, #06b6d4 100%)",
-                    borderTop: "1px solid rgba(255,255,255,0.1)",
-                }}
-            >
-                <div className="max-w-6xl mx-auto px-6 py-16 text-center">
-                    <h2
-                        style={{
-                            fontFamily: "'DM Serif Display', serif",
-                            fontSize: "2rem",
-                            color: "#ffffff",
-                            marginBottom: 12,
-                        }}
-                    >
+            {/* ── CTA ── */}
+            <section className="border-t border-white/10 bg-gradient-to-r from-teal-700 via-teal-500 to-cyan-500">
+                <div className="mx-auto max-w-6xl px-6 py-16 text-center">
+                    <h2 className="mb-3 font-['DM_Serif_Display',serif] text-3xl text-white">
                         Siap untuk Pakaian yang Lebih Bersih?
                     </h2>
-                    <p
-                        style={{
-                            fontSize: "1rem",
-                            color: "#ccfbf1",
-                            maxWidth: 480,
-                            margin: "0 auto 28px",
-                            lineHeight: 1.6,
-                        }}
-                    >
+                    <p className="mx-auto mb-7 max-w-[480px] text-base leading-relaxed text-teal-100">
                         Daftar sekarang dan nikmati kemudahan layanan laundry
                         BrightWash langsung dari genggaman tangan Anda.
                     </p>
                     <Link
                         to="/register"
-                        style={{
-                            display: "inline-block",
-                            padding: "14px 36px",
-                            background: "#ffffff",
-                            color: "#0f766e",
-                            borderRadius: 12,
-                            fontSize: "0.95rem",
-                            fontWeight: 600,
-                            textDecoration: "none",
-                            boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
-                            transition: "all 0.2s",
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.transform = "translateY(-2px)";
-                            e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.2)";
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.transform = "translateY(0)";
-                            e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.15)";
-                        }}
+                        className="inline-block rounded-xl bg-white px-9 py-3.5 text-[0.95rem] font-semibold text-teal-700 no-underline shadow-lg shadow-black/15 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20"
                     >
                         Daftar Gratis
                     </Link>
                 </div>
             </section>
 
-            {/* FOOTER */}
-            <footer
-                style={{
-                    background: "#0f172a",
-                    borderTop: "1px solid rgba(255,255,255,0.05)",
-                }}
-            >
-                <div className="max-w-6xl mx-auto px-6 py-10">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            {/* ── FOOTER ── */}
+            <footer className="border-t border-white/5 bg-slate-900">
+                <div className="mx-auto max-w-6xl px-6 py-10">
+                    <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
                         <div className="flex items-center gap-2">
                             <img
                                 src="/img/BrightWashNoBg.png"
                                 alt="BrightWash"
-                                style={{ width: 32, height: 32, objectFit: "contain" }}
+                                className="h-8 w-8 object-contain"
                             />
-                            <span
-                                style={{
-                                    fontFamily: "'DM Serif Display', serif",
-                                    fontSize: "1.1rem",
-                                    color: "#e2e8f0",
-                                }}
-                            >
+                            <span className="font-['DM_Serif_Display',serif] text-[1.1rem] text-slate-300">
                                 BrightWash
                             </span>
                         </div>
 
-                        <p style={{ fontSize: "0.8rem", color: "#64748b" }}>
+                        <p className="text-[0.8rem] text-slate-500">
                             &copy; 2025 BrightWash. All rights reserved.
                         </p>
                     </div>

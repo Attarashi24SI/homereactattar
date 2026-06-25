@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./assets/tailwind.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import { AuthProvider } from "./context/AuthContext";
+import { SearchProvider } from "./context/SearchContext";
 import { AdminRoute, MemberRoute } from "./components/RouteGuards";
 import Loading from "./components/Loading";
 
@@ -41,6 +42,7 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <Suspense fallback={<Loading />}>
+          <SearchProvider>
           <Routes>
             {/* Guest landing page */}
             <Route path="/" element={<Home />} />
@@ -79,6 +81,7 @@ function App() {
               <Route path="/forgot" element={<Forgot />} />
             </Route>
           </Routes>
+          </SearchProvider>
         </Suspense>
       </AuthProvider>
     </ThemeProvider>

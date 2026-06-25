@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { ArrowLeft, Bell, Search } from "lucide-react";
+import { ArrowLeft, Bell, Search, X } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import { useSearch } from "../context/SearchContext";
 
 const Header = () => {
     const { isLight } = useTheme();
+    const { searchQuery, setSearchQuery } = useSearch();
     const navigate = useNavigate();
 
     return (
@@ -15,8 +17,23 @@ const Header = () => {
                     <input
                         type="text"
                         placeholder="Search here..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
                         className={`w-full bg-transparent text-sm font-medium outline-none ${isLight ? "text-slate-700 placeholder:text-slate-400" : "text-white placeholder:text-gray-200"}`}
                     />
+                    {searchQuery && (
+                        <button
+                            onClick={() => setSearchQuery("")}
+                            className={`ml-1 flex h-6 w-6 items-center justify-center rounded-full transition ${
+                                isLight
+                                    ? "text-slate-400 hover:bg-slate-200 hover:text-slate-600"
+                                    : "text-gray-500 hover:bg-white/10 hover:text-gray-300"
+                            }`}
+                            title="Clear search"
+                        >
+                            <X className="h-3.5 w-3.5" />
+                        </button>
+                    )}
                 </div>
 
                 <div className="flex items-center gap-3">
