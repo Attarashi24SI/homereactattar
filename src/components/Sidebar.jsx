@@ -46,7 +46,11 @@ const Sidebar = () => {
 
                 {/* Logo */}
                 <div className="mb-8 flex items-center gap-3">
-                    <div className={`h-9 w-9 rounded-xl shadow-sm ${isLight ? "bg-gradient-to-br from-teal-400 to-cyan-600 shadow-teal-200" : "bg-gradient-to-tr from-cyan-400 to-blue-500"}`}></div>
+                    <img
+                        src="/img/BrightWashNoBg.png"
+                        alt="BrightWash"
+                        className="h-10 w-10 object-contain"
+                    />
                     <h1 className={`${isLight ? "text-slate-800" : "text-gray-100"} text-lg font-bold tracking-tight`}>Bright Wash</h1>
                 </div>
 

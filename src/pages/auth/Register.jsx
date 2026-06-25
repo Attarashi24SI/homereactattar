@@ -227,11 +227,11 @@ export default function Register() {
                     <div style={{ width: "100%", maxWidth: 420, paddingTop: 12 }}>
                         {/* Logo */}
                         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 24 }}>
-                            <div style={{
-                                width: 32, height: 32, borderRadius: 9,
-                                background: "linear-gradient(135deg, #14b8a6, #0d9488)",
-                                boxShadow: "0 4px 12px rgba(20,184,166,0.3)",
-                            }} />
+                            <img
+                                src="/img/BrightWashNoBg.png"
+                                alt="BrightWash"
+                                style={{ width: 40, height: 40, objectFit: "contain" }}
+                            />
                             <span style={{
                                 fontFamily: "'DM Serif Display', serif",
                                 fontSize: "1.3rem", color: "#0f766e",

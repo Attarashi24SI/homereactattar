@@ -172,11 +172,11 @@ export default function Login() {
           <div style={{ width: "100%", maxWidth: 400 }}>
             {/* Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32 }}>
-              <div style={{
-                width: 36, height: 36, borderRadius: 10,
-                background: "linear-gradient(135deg, #14b8a6, #0d9488)",
-                boxShadow: "0 4px 12px rgba(20,184,166,0.3)",
-              }} />
+              <img
+                src="/img/BrightWashNoBg.png"
+                alt="BrightWash"
+                style={{ width: 42, height: 42, objectFit: "contain" }}
+              />
               <span style={{
                 fontFamily: "'DM Serif Display', serif",
                 fontSize: "1.4rem", color: "#0f766e",

@@ -1,0 +1,60 @@
+# Evaluasi Landing Page - BrightWash
+
+## Tanggal: 26-06-2026
+
+## Ringkasan
+Evaluasi terhadap Landing Page (Home.jsx) dan komponen terkait.
+
+---
+
+## ✅ Yang Sudah Baik
+- **Hero section**: Clean, modern dengan CTA jelas (Mulai Sekarang, Lihat Layanan)
+- **Services**: Sudah menggunakan `fetchServices()` dari API — konsisten dengan Member Portal
+- **Testimonial carousel**: Multi-card, auto-rotate tiap 5 detik, navigasi arrows, dot indicators, smooth transition 500ms
+- **Responsive**: 3 card desktop, 2 tablet, 1 mobile
+- **CTA + Footer**: Rapi dan konsisten dengan brand BrightWash
+- **Header (admin)**: Tombol notifikasi (Bell) dan tombol kembali (ArrowLeft) sudah terpasang
+
+## ⚠️ Saran Perbaikan
+
+### 1. Inline styles vs Tailwind — Tidak Konsisten
+Sebagian besar komponen menggunakan `style={}` props, bukan Tailwind utility classes.
+- Dampak: Kode jadi panjang, sulit di-maintain, dark mode tidak berfungsi optimal
+- Saran: Migrasi bertahap ke Tailwind classes untuk komponen baru
+
+### 2. Duplikasi Service Card — Dua Implementasi Berbeda
+- `Home.jsx` merender services dengan inline styles + `iconMap`/`colorMap`
+- `MemberPortal.jsx` punya komponen `ServiceCard` sendiri dengan Tailwind + `colorClass`
+- Keduanya punya mapping icon dan color yang hampir identik
+- Saran: Extract shared `ServiceCard` component ke `src/components/`
+
+### 3. Testimonial Masih Static
+- Data testimonial di-hardcode di `Home.jsx`
+- Saran: Buat `fetchTestimonials()` di `laundryPortalAPI.js` dengan fallback (mirip pola `fetchServices()`)
+
+### 4. Header Component — Search Bar Tidak Fungsional
+- Search bar hanya placeholder, tidak ada fungsi filter/search
+- Saran: Integrasikan dengan fitur pencarian atau hapus jika tidak digunakan
+
+### 5. Notifikasi Masih Static
+- `Notifications.jsx` hanya 3 notifikasi hardcoded
+- Saran: Sambungkan ke Supabase atau gunakan data dari `order_tracking`
+
+### 6. Services Section — Loading State
+- Hanya spinner + teks "Memuat layanan..."
+- Saran: Tambah skeleton cards yang mirip bentuk asli card untuk mengurangi layout shift
+
+### 7. Testimonial Hover State di Mobile
+- Menggunakan `onMouseEnter`/`onMouseLeave` yang tidak berfungsi di layar sentuh
+- Saran: Gunakan CSS `hover:` lewat Tailwind — lebih ringan dan cross-platform
+
+## 💡 Prioritas
+
+| Prioritas | Saran | Dampak |
+|-----------|-------|--------|
+| 🔴 Tinggi | Shared `ServiceCard` component | Konsistensi, maintainability |
+| 🔴 Tinggi | Testimonial API + fallback | Siap produksi |
+| 🟡 Sedang | Migrasi inline styles → Tailwind | Maintainability, dark mode |
+| 🟡 Sedang | Skeleton loading untuk services | UX lebih baik |
+| 🟢 Ringan | CSS hover instead of JS onMouseEnter | Performance, mobile |
+| 🟢 Ringan | Tambah data testimonials (8-10) | Carousel lebih dinamis |

@@ -1,10 +1,11 @@
 import React from "react";
-import { ChevronDown, Search } from "lucide-react";
+import { useNavigate, Link } from "react-router-dom";
+import { ArrowLeft, Bell, Search } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import ProfileAvatar from "./ProfileAvatar";
 
 const Header = () => {
     const { isLight } = useTheme();
+    const navigate = useNavigate();
 
     return (
         <header className={`w-full rounded-2xl px-5 py-4 shadow-sm ${isLight ? "border border-slate-200/80 bg-white/95 shadow-slate-200/70" : "bg-gradient-to-r from-[#263f31] via-[#49d6ad] to-[#086a82] shadow-black/25"}`}>
@@ -18,17 +19,24 @@ const Header = () => {
                     />
                 </div>
 
-                <div className={`flex items-center justify-end gap-3 rounded-xl border px-3 py-2 ${isLight ? "border-slate-200 bg-white shadow-sm" : "border-white/10 bg-white/5"}`}>
-                    <div className="text-right">
-                        <p className={`text-sm font-semibold ${isLight ? "text-slate-700" : "text-white"}`}>Uroos Fatima</p>
-                        <p className={`text-xs ${isLight ? "text-slate-500" : "text-white/65"}`}>uroos.design@gmail.com</p>
-                    </div>
-
-                    <ProfileAvatar name="Uroos Fatima" />
-
-                    <button className={`flex h-8 w-8 items-center justify-center rounded-lg transition ${isLight ? "text-slate-500 hover:bg-slate-100 hover:text-teal-700" : "text-white/85 hover:bg-white/10"}`}>
-                        <ChevronDown className="h-5 w-5" />
+                <div className="flex items-center gap-3">
+                    {/* Back Button */}
+                    <button
+                        onClick={() => navigate(-1)}
+                        className={`flex h-10 w-10 items-center justify-center rounded-xl border transition ${isLight ? "border-slate-200 bg-white text-slate-500 hover:bg-teal-50 hover:text-teal-600 hover:border-teal-300" : "border-white/10 bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white"}`}
+                        title="Kembali"
+                    >
+                        <ArrowLeft className="h-5 w-5" />
                     </button>
+
+                    {/* Notification Button */}
+                    <Link
+                        to="/notifications"
+                        className={`flex h-10 w-10 items-center justify-center rounded-xl border transition ${isLight ? "border-slate-200 bg-white text-slate-500 hover:bg-teal-50 hover:text-teal-600 hover:border-teal-300" : "border-white/10 bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white"}`}
+                        title="Notifikasi"
+                    >
+                        <Bell className="h-5 w-5" />
+                    </Link>
                 </div>
             </div>
         </header>
