@@ -36,7 +36,15 @@ Create Order Tracking
   ↓
 Track Order Status
   ↓
-View Order History
+View Order History (Completed orders)
+  ↓
+Give Feedback (Rating 1-5 + Comment)
+  ↓
+Feedback saved to database
+  ↓
+(Optional) Admin approves feedback as testimonial
+  ↓
+Approved feedback displayed on Landing Page as testimonial
 
 Admin
   ↓
@@ -49,6 +57,8 @@ View Order Details
 Update Order Status / Update Payment / Update Estimate
   ↓
 Order Tracking entries created
+  ↓
+(New) Review Customer Feedback — Approve/Reject for Landing Page testimonial
 
 ---
 
@@ -443,6 +453,165 @@ Store ordered service items linked to each order.
 
 ---
 
+---
+
+## Order Feedback & Customer Review
+
+### Purpose
+
+Allow customers to give ratings and reviews for completed orders. Approved feedback serves as testimonials on the Landing Page.
+
+### Entry Point
+
+- Page: `/history`
+- Component: `src/pages/History.jsx`
+- Form: `src/components/FeedbackForm.jsx` (dialog modal)
+- APIs:
+  - `laundryPortalAPI.createFeedback`
+  - `laundryPortalAPI.fetchFeedbackByOrder`
+  - `laundryPortalAPI.fetchFeedbackForOrders` (bulk)
+  - `laundryPortalAPI.fetchApprovedTestimonials`
+  - `adminOrdersAPI.approveFeedback`
+
+### Workflow
+
+1. Member navigates to `/history` which lists orders where `current_step === "Completed"`.
+2. For each completed order, the system fetches existing feedback via `fetchFeedbackForOrders`.
+3. If no feedback exists, a **"Beri Ulasan"** button is shown.
+4. Clicking the button opens `FeedbackForm` dialog with:
+   - 5-star rating (interactive hover + click)
+   - Optional comment textarea (max 1000 chars)
+   - Submit button with loading state
+5. On submit, `createFeedback` is called which:
+   - Validates user profile exists
+   - Validates rating (1-5, required)
+   - Validates order ownership (user_id match)
+   - Validates order status is "Completed"
+   - Checks feedback doesn't already exist (duplicate prevention)
+   - Creates feedback record in Supabase `feedback` table
+6. After successful submission, History refreshes and shows:
+   - Star rating display
+   - Comment (truncated)
+   - Feedback date
+   - "Sudah Diulas" badge (replaces "Beri Ulasan" button)
+
+### Tables Used
+
+- `feedback` (created in Supabase)
+- `orders` (validated for ownership and status)
+- `profiles` (for user_id mapping)
+
+### Business Logic
+
+- `createFeedback` performs server-side validation before saving:
+  - Checks order belongs to the logged-in user
+  - Checks `current_step === "Completed"`
+  - Checks no existing feedback for the same order
+- Database-level unique index `idx_feedback_order_id` on `order_id` prevents duplicate entries
+- New feedback always starts with `is_approved: false`
+
+### Output
+
+- Database: insert into `feedback` table
+- UI: History page shows submitted feedback with stars, comment, date, and "Sudah Diulas" badge
+
+### Edge Cases
+
+- Attempting to submit feedback twice for the same order: blocked by server validation + DB unique index
+- Attempting to give feedback on non-Completed order: blocked by server validation
+- Attempting to give feedback on another member's order: blocked by server validation
+- Empty comment: allowed (comment is optional)
+- No feedback yet for any completed order: "Beri Ulasan" button shown for each
+
+---
+
+## Admin Feedback Approval
+
+### Purpose
+
+Allow admins to review customer feedback and approve/reject it for use as Landing Page testimonials.
+
+### Entry Point
+
+- Page: `/orders/:id` (Order Detail page)
+- Component: `src/pages/OrdersDetail.jsx`
+- API: `adminOrdersAPI.approveFeedback`
+
+### Workflow
+
+1. Admin opens order detail for a Completed order.
+2. `OrdersDetail.jsx` fetches feedback via `laundryPortalAPI.fetchFeedbackByOrder(order.id)`.
+3. If feedback exists, a **"Ulasan Pelanggan"** section appears in the right sidebar showing:
+   - Star rating
+   - Comment text
+   - Submission date
+   - Testimonial status badge ("Menunggu" / "Disetujui")
+4. For pending feedback (`is_approved: false`), admin can:
+   - Click **"Setujui"** → sets `is_approved = true` → feedback appears on Landing Page
+   - Click **"Tolak"** → keeps `is_approved = false` → feedback stays hidden from Landing Page
+5. Success/error notifications are shown via inline message.
+
+### Tables Used
+
+- `feedback` (updated)
+- `orders` (context only)
+
+### Business Logic
+
+- Only feedback with `is_approved = true` is shown on the Landing Page.
+- Approved feedback can be toggled back to pending by clicking "Tolak" again.
+- `updated_at` is automatically updated by the DB trigger.
+
+### Output
+
+- Database: patch `feedback.is_approved` and `feedback.updated_at`
+- UI: status badge updates, confirmation message shown
+
+---
+
+## Landing Page Testimonials Integration
+
+### Purpose
+
+Display approved customer feedback as testimonials on the public Landing Page.
+
+### Entry Point
+
+- Page: `/` (Landing Page)
+- Component: `src/pages/guest/Home.jsx`
+- API: `laundryPortalAPI.fetchTestimonials()`
+
+### Workflow
+
+1. Landing Page calls `fetchTestimonials()` on mount.
+2. `fetchTestimonials()` delegates to `fetchApprovedTestimonials()` which:
+   - Queries `feedback` table where `is_approved = true`
+   - Joins `profiles` to get customer name (`profiles.full_name`)
+   - Maps result to `{ id, name, rating, text, created_at }` format
+   - If no approved feedback exists or API fails, falls back to `FALLBACK_TESTIMONIALS`
+3. Testimonials are displayed in the existing carousel component with:
+   - Star rating
+   - Comment text
+   - Customer name
+   - Auto-rotate, pagination dots, navigation arrows
+
+### Tables Used
+
+- `feedback` (read, filtered by `is_approved = true`)
+- `profiles` (joined for customer name)
+
+### Business Logic
+
+- Only feedback with `is_approved = true` is displayed
+- Falls back to hardcoded `FALLBACK_TESTIMONIALS` when no approved feedback exists
+- The existing testimonial carousel UI is unchanged
+
+### Output
+
+- UI: testimonial carousel cards on Landing Page
+
+---
+
 ## Order Tracking
 
 ### Purpose
@@ -642,6 +811,8 @@ These files are used by UI pages but are not live API data:
 - `profiles.customerid` and `user.customerid` are linked to `customer.customerid`, but data consistency depends on correct client-side creation.
 - `order_tracking.updated_by` is treated as `profiles.id`, but verification is required.
 - `contact.customerId`, `interaction.customerId`, and `profiles.customerid` relationships are logical, not enforced in code.
+- `feedback.user_id` references `profiles.id` — verified via foreign key constraint in migration.
+- `feedback.order_id` references `orders.id` — verified via foreign key constraint in migration.
 
 ### Missing Validations
 
@@ -680,6 +851,8 @@ These files are used by UI pages but are not live API data:
 | Orders | Yes | Member checkout and admin order management via Supabase |
 | Order Items | Yes | Created during checkout, viewed in admin order detail |
 | Order Tracking | Yes | Created during checkout, extended on admin status update |
+| **Order Feedback & Customer Review** | **Yes** | `History.jsx`, `FeedbackForm.jsx`, `laundryPortalAPI`, `adminOrdersAPI.approveFeedback` |
+| **Landing Page Testimonials** | **Yes** | `fetchApprovedTestimonials()` with fallback, admin approval required |
 | Customer Interaction | No | Not implemented |
 | Points & Tier | Partially | Calculated on order creation, not aggregated back to profile |
 | Member Portal | Yes | `MemberPortal.jsx`, `TrackingStatus.jsx`, `TrackingDetail.jsx`, `History.jsx` |
@@ -695,6 +868,10 @@ The following tables appear in the provided schema but are not exercised by acti
 - `interaction`
 - `order` (legacy)
 - `profiles` is used indirectly, but membership dashboard uses static data instead of direct API reads
+- `feedback` — **active**, used by Order Feedback & Customer Review feature
+  - Stores customer ratings and reviews for completed orders
+  - Approvals managed by admin via Orders Detail page
+  - Approved feedback feeds into Landing Page testimonials
 
 ---
 

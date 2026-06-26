@@ -19,7 +19,9 @@ import PageHeader from "../components/PageHeader";
 import MetricCard from "../components/MetricCard";
 import { StatusBadge } from "../components/Badge";
 import { useTheme } from "../context/ThemeContext";
-import adminOrdersAPI, { ORDER_STEPS } from "../services/adminOrdersAPI";
+import { Star, XCircle, Loader2 } from "lucide-react";
+import adminOrdersAPI, { ORDER_STEPS, approveFeedback } from "../services/adminOrdersAPI";
+import laundryPortalAPI from "../services/laundryPortalAPI";
 
 const formatDate = (date) => {
     if (!date) return "-";
@@ -116,6 +118,47 @@ export default function OrdersDetail() {
         } finally {
             setSaving(false);
         }
+    };
+
+    const [feedback, setFeedback] = useState(null);
+    const [feedbackLoading, setFeedbackLoading] = useState(false);
+    const [approving, setApproving] = useState(false);
+
+    useEffect(() => {
+        if (order?.current_step === "Completed") {
+            setFeedbackLoading(true);
+            laundryPortalAPI.fetchFeedbackByOrder(order.id).then((data) => {
+                setFeedback(data);
+                setFeedbackLoading(false);
+            });
+        }
+    }, [order]);
+
+    const handleApproveFeedback = async (approve) => {
+        if (!feedback) return;
+        setApproving(true);
+        try {
+            await approveFeedback(feedback.id, approve);
+            showMessage("success", approve ? "Feedback disetujui sebagai testimonial." : "Feedback ditolak.");
+            const updated = await laundryPortalAPI.fetchFeedbackByOrder(order.id);
+            setFeedback(updated);
+        } catch (err) {
+            showMessage("error", err.message || "Gagal mengubah status feedback.");
+        } finally {
+            setApproving(false);
+        }
+    };
+
+    const renderStars = (rating) => {
+        return Array.from({ length: 5 }, (_, i) => (
+            <Star
+                key={i}
+                size={16}
+                fill={i < rating ? "#f59e0b" : "transparent"}
+                stroke={i < rating ? "#f59e0b" : "#d1d5db"}
+                strokeWidth={1.5}
+            />
+        ));
     };
 
     if (loading) {
@@ -393,6 +436,85 @@ export default function OrdersDetail() {
                             </button>
                         </div>
                     </div>
+
+                    {/* Feedback Review Section */}
+                    {feedback && (
+                        <div className={`rounded-2xl border p-6 shadow-xl ${isLight ? "border-slate-200/80 bg-white shadow-slate-200/70" : "border-white/5 bg-[#06090f] shadow-black/30"}`}>
+                            <h3 className={`mb-4 flex items-center gap-2 text-base font-bold ${isLight ? "text-slate-900" : "text-white"}`}>
+                                <Star className={`h-4 w-4 ${isLight ? "text-amber-500" : "text-amber-400"}`} />
+                                Ulasan Pelanggan
+                            </h3>
+
+                            <div className="flex items-center gap-1 mb-3">
+                                {renderStars(feedback.rating)}
+                                <span className={`ml-2 text-sm font-medium ${isLight ? "text-slate-600" : "text-gray-300"}`}>
+                                    {feedback.rating}/5
+                                </span>
+                            </div>
+
+                            {feedback.comment && (
+                                <p className={`mb-3 text-sm italic ${isLight ? "text-slate-600" : "text-gray-400"}`}>
+                                    "{feedback.comment}"
+                                </p>
+                            )}
+
+                            <p className={`mb-4 text-xs ${isLight ? "text-slate-400" : "text-gray-500"}`}>
+                                Dikirim: {formatDate(feedback.created_at)}
+                            </p>
+
+                            <div className="flex items-center gap-2">
+                                <span className={`text-xs font-semibold uppercase tracking-wider ${isLight ? "text-slate-500" : "text-gray-400"}`}>
+                                    Status Testimonial:
+                                </span>
+                                <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold ${
+                                    feedback.is_approved
+                                        ? isLight ? "bg-emerald-100 text-emerald-700" : "bg-emerald-500/20 text-emerald-300"
+                                        : isLight ? "bg-amber-100 text-amber-700" : "bg-amber-500/20 text-amber-300"
+                                }`}>
+                                    {feedback.is_approved ? "Disetujui" : "Menunggu"}
+                                </span>
+                            </div>
+
+                            {!feedback.is_approved && (
+                                <div className="mt-4 flex items-center gap-2">
+                                    <button
+                                        onClick={() => handleApproveFeedback(true)}
+                                        disabled={approving}
+                                        className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold transition-all disabled:opacity-50 ${
+                                            isLight
+                                                ? "border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
+                                                : "border-emerald-500/30 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20"
+                                        }`}
+                                    >
+                                        {approving ? <Loader2 className="h-3 w-3 animate-spin" /> : <CheckCircle2 className="h-3 w-3" />}
+                                        Setujui
+                                    </button>
+                                    <button
+                                        onClick={() => handleApproveFeedback(false)}
+                                        disabled={approving}
+                                        className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold transition-all disabled:opacity-50 ${
+                                            isLight
+                                                ? "border-red-200 bg-red-50 text-red-600 hover:bg-red-100"
+                                                : "border-red-500/30 bg-red-500/10 text-red-300 hover:bg-red-500/20"
+                                        }`}
+                                    >
+                                        <XCircle className="h-3 w-3" />
+                                        Tolak
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+                    {/* Loading state for feedback */}
+                    {feedbackLoading && (
+                        <div className={`rounded-2xl border p-6 shadow-xl ${isLight ? "border-slate-200/80 bg-white shadow-slate-200/70" : "border-white/5 bg-[#06090f] shadow-black/30"}`}>
+                            <div className="flex items-center gap-2 text-sm text-slate-500">
+                                <Loader2 className="h-4 w-4 animate-spin" />
+                                Memuat ulasan...
+                            </div>
+                        </div>
+                    )}
 
                     <div className={`rounded-2xl border p-6 shadow-xl ${isLight ? "border-slate-200/80 bg-white shadow-slate-200/70" : "border-white/5 bg-[#06090f] shadow-black/30"}`}>
                         <h3 className={`mb-4 flex items-center gap-2 text-base font-bold ${isLight ? "text-slate-900" : "text-white"}`}>

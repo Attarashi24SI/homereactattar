@@ -59,6 +59,21 @@ const fetchWithRetry = async (url, options = {}, retries = 2) => {
     }
 };
 
+const approveFeedback = async (feedbackId, approve = true) => {
+    if (!feedbackId) throw new Error("Feedback ID harus diisi.");
+    try {
+        await axios.patch(
+            `${SUPABASE_URL}/feedback?id=eq.${encodeURIComponent(feedbackId)}`,
+            { is_approved: approve, updated_at: new Date().toISOString() },
+            { headers }
+        );
+        return { success: true };
+    } catch (error) {
+        const message = error.response?.data?.message || error.response?.data?.hint || error.message;
+        throw new Error(message || "Gagal mengubah status feedback.");
+    }
+};
+
 const adminOrdersAPI = {
     async fetchAdminOrders() {
         try {
@@ -143,5 +158,7 @@ const adminOrdersAPI = {
         }
     },
 };
+
+export { approveFeedback };
 
 export default adminOrdersAPI;

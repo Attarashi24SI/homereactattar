@@ -54,10 +54,14 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
   - create/update/delete customer
 - `src/services/laundryPortalAPI.js`
   - fetch services
-  - fetchTestimonials — mengambil data testimonial dengan fallback
+  - fetchTestimonials — mengambil testimonial dari feedback yang disetujui (fallback jika kosong)
   - fetch member orders
   - fetch order by invoice
   - create order + insert order items + order tracking
+  - **createFeedback** — membuat feedback baru dengan validasi (order milik member, status Completed, cek duplikat)
+  - **fetchFeedbackByOrder** — mengambil feedback berdasarkan order ID
+  - **fetchFeedbackForOrders** — bulk fetch feedback untuk banyak order
+  - **fetchApprovedTestimonials** — mengambil feedback yang telah disetujui admin untuk Landing Page
   - fallback service dan testimonial data jika Supabase tidak tersedia
 - `src/services/adminOrdersAPI.js`
   - fetch admin orders
@@ -65,6 +69,7 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
   - update order status
   - update payment status
   - update estimated finish
+  - **approveFeedback** — menyetujui/menolak feedback sebagai testimonial
 
 ## Implementasi Utama
 
@@ -107,17 +112,27 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 - `src/pages/TrackingDetail.jsx` memuat detail invoice dengan status tracking
 - `src/pages/History.jsx` menampilkan order yang `current_step === 'Completed'`
 
+### Order Feedback & Customer Review
+
+- `src/pages/History.jsx` — tombol "Beri Ulasan" untuk Completed order tanpa feedback, menampilkan rating (bintang) + komentar + tanggal + badge "Sudah Diulas" untuk yang sudah ada
+- `src/components/FeedbackForm.jsx` — dialog modal dengan star rating interaktif (1-5, hover + click), textarea komentar (opsional), validasi, dan loading state
+- `src/services/laundryPortalAPI.js` — `createFeedback` dengan validasi server-side: kepemilikan order, status Completed, dan cek duplikat
+- Tabel `feedback` di Supabase menyimpan rating, komentar, dan status persetujuan (`is_approved`)
+- Landing Page (`Home.jsx`) menampilkan feedback yang sudah disetujui admin sebagai testimonial otomatis
+
 ### Admin Order Management
 
 - `src/pages/Orders.jsx` memuat daftar order dari `adminOrdersAPI`
 - `src/pages/OrdersDetail.jsx` bisa memperbarui status order, status pembayaran, dan estimasi selesai
 - perubahan status menambah baris `order_tracking`
+- **Feedback Review**: `OrdersDetail.jsx` menampilkan section "Ulasan Pelanggan" untuk Completed order + tombol Setujui/Tolak testimonial
 
 ## Shared Components
 
 - `src/components/ServiceCard.jsx` — digunakan oleh Landing Page (`variant="landing"`) dan Member Portal (`variant="portal"`)
   - Mengekspor `iconMap`, `colorGradientMap`, `colorTailwindMap` — menghilangkan duplikasi
 - `src/components/ServiceCardSkeleton.jsx` — skeleton loading untuk services (dua varian)
+- `src/components/FeedbackForm.jsx` — dialog form feedback dengan star rating + komentar (digunakan di History.jsx)
 - `src/context/SearchContext.jsx` — global search state untuk Header/admin pages
   - `SearchProvider` dipasang di `App.jsx` membungkus semua routes
   - `Header.jsx` search bar sudah fungsional (value, onChange, clear button)
@@ -159,6 +174,7 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 | order_items | id | item order (dipakai oleh checkout)
 | order_tracking | id | status tracking order
 | orders | id | order laundry utama
+| feedback | id | rating & ulasan pelanggan untuk Completed order
 | products | id | daftar layanan laundry
 | profiles | id | profil loyalty / tier
 | user | uid | akun login
@@ -170,6 +186,8 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 - `order_items.order_id` → `orders.id`
 - `order_items.product_id` → `products.id`
 - `order_tracking.order_id` → `orders.id`
+- `feedback.order_id` → `orders.id`
+- `feedback.user_id` → `profiles.id`
 
 ## Business Flow Singkat
 
@@ -179,7 +197,10 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 4. Member memilih layanan di `MemberPortal`.
 5. Checkout membuat order, item, dan tracking.
 6. Member memantau status di `TrackingStatus` / `TrackingDetail`.
-7. Admin melihat daftar order dan memperbarui status/pembayaran.
+7. Member memberi rating & ulasan di `History` untuk Completed order.
+8. Admin menyetujui/menolak feedback di `OrdersDetail`.
+9. Feedback yang disetujui tampil sebagai testimonial di Landing Page.
+10. Admin melihat daftar order dan memperbarui status/pembayaran.
 
 ## Ringkasan Kesesuaian Kode
 
@@ -193,6 +214,7 @@ Aplikasi React + Vite untuk BrightWash laundry portal dengan:
 - `supabase_laundry_member_portal_seed.sql`
 - `orders_migration.sql`
 - `migration_refactor_schema.sql`
+- **`supabase_feedback_migration.sql`** — tabel `feedback` untuk Order Feedback & Customer Review
 
 ---
 

@@ -163,14 +163,8 @@ export const normalizeOrder = (order) => {
 
 export const laundryPortalAPI = {
     async fetchTestimonials() {
-        try {
-            const query = `${SUPABASE_URL}/testimonials?is_active=eq.true&select=*&order=created_at.asc`;
-            const response = await axios.get(query, { headers });
-            return response.data?.length ? response.data : FALLBACK_TESTIMONIALS;
-        } catch (error) {
-            console.warn("Menggunakan fallback testimonial:", error.response?.data || error.message);
-            return FALLBACK_TESTIMONIALS;
-        }
+        // Returns approved feedback from orders as testimonials, with fallback
+        return this.fetchApprovedTestimonials();
     },
 
     async fetchServices() {
@@ -205,6 +199,93 @@ export const laundryPortalAPI = {
         } catch (error) {
             console.warn("Gagal mengambil detail tracking:", error.response?.data || error.message);
             return null;
+        }
+    },
+
+    // ── FEEDBACK ──
+
+    async createFeedback({ user, orderId, rating, comment }) {
+        try {
+            const userId = user?.customerid ? await ensureProfile(user) : getUserId(user);
+            if (!userId) throw new Error("User profile tidak ditemukan.");
+            if (!orderId) throw new Error("Order ID harus diisi.");
+            if (!rating || rating < 1 || rating > 5) throw new Error("Rating harus diisi (1-5).");
+
+            // Validate: order ownership & completed status
+            const orderCheck = await axios.get(
+                `${SUPABASE_URL}/orders?id=eq.${encodeURIComponent(orderId)}&select=user_id,current_step&limit=1`,
+                { headers }
+            );
+            const orderData = orderCheck.data?.[0];
+            if (!orderData) throw new Error("Order tidak ditemukan.");
+            if (orderData.user_id !== userId) throw new Error("Anda tidak memiliki akses ke order ini.");
+            if (orderData.current_step !== "Completed") throw new Error("Feedback hanya dapat diberikan untuk pesanan yang sudah selesai.");
+
+            // Check: feedback already exists
+            const existingFb = await this.fetchFeedbackByOrder(orderId);
+            if (existingFb) throw new Error("Feedback sudah pernah diberikan untuk pesanan ini.");
+
+            const payload = {
+                order_id: orderId,
+                user_id: userId,
+                rating,
+                comment: comment || null,
+                is_approved: false,
+            };
+
+            const response = await axios.post(`${SUPABASE_URL}/feedback`, payload, { headers });
+            return response.data?.[0] || null;
+        } catch (error) {
+            const message = error.response?.data?.message || error.response?.data?.hint || error.message;
+            throw new Error(message || "Gagal menyimpan feedback.");
+        }
+    },
+
+    async fetchFeedbackByOrder(orderId) {
+        try {
+            const query = `${SUPABASE_URL}/feedback?order_id=eq.${encodeURIComponent(orderId)}&select=*&limit=1`;
+            const response = await axios.get(query, { headers });
+            return response.data?.[0] || null;
+        } catch (error) {
+            console.warn("Gagal mengambil feedback:", error.response?.data || error.message);
+            return null;
+        }
+    },
+
+    async fetchFeedbackForOrders(orderIds) {
+        if (!orderIds?.length) return {};
+        try {
+            const ids = orderIds.map((id) => encodeURIComponent(id)).join(",");
+            const query = `${SUPABASE_URL}/feedback?order_id=in.(${ids})&select=*`;
+            const response = await axios.get(query, { headers });
+            const feedbackMap = {};
+            (response.data || []).forEach((fb) => {
+                feedbackMap[fb.order_id] = fb;
+            });
+            return feedbackMap;
+        } catch (error) {
+            console.warn("Gagal mengambil feedback bulk:", error.response?.data || error.message);
+            return {};
+        }
+    },
+
+    async fetchApprovedTestimonials() {
+        try {
+            const query = `${SUPABASE_URL}/feedback?is_approved=eq.true&select=*,profiles!feedback_user_id_fkey(full_name)&order=created_at.desc`;
+            const response = await axios.get(query, { headers });
+            if (response.data?.length) {
+                return response.data.map((fb) => ({
+                    id: fb.id,
+                    name: fb.profiles?.full_name || "Pelanggan BrightWash",
+                    rating: fb.rating,
+                    text: fb.comment || "",
+                    created_at: fb.created_at,
+                }));
+            }
+            return FALLBACK_TESTIMONIALS;
+        } catch (error) {
+            console.warn("Menggunakan fallback testimonial:", error.response?.data || error.message);
+            return FALLBACK_TESTIMONIALS;
         }
     },
 
