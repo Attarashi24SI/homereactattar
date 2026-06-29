@@ -34,39 +34,6 @@ export const STATUS_COPY = {
     Completed: ["Selesai", "Pesanan laundry sudah selesai."],
 };
 
-export const FALLBACK_TESTIMONIALS = [
-    {
-        id: "1",
-        name: "Sarah Wijaya",
-        rating: 5,
-        text: "Very fast service and the clothes were perfectly clean. Highly recommended!",
-    },
-    {
-        id: "2",
-        name: "Budi Santoso",
-        rating: 5,
-        text: "Pelayanan sangat memuaskan, pakaian wangi dan rapi. Sudah langganan sejak 3 bulan lalu.",
-    },
-    {
-        id: "3",
-        name: "Dian Permata",
-        rating: 4,
-        text: "Super express 3 jam benar-benar tepat waktu. Cocok untuk kebutuhan mendesak.",
-    },
-    {
-        id: "4",
-        name: "Rina Marlina",
-        rating: 5,
-        text: "Harga terjangkau dengan kualitas premium. Tim BrightWash sangat profesional.",
-    },
-    {
-        id: "5",
-        name: "Andi Pratama",
-        rating: 4,
-        text: "Layanan setrika premiumnya luar biasa. Rapi dan wangi tahan lama.",
-    },
-];
-
 export const FALLBACK_SERVICES = [
     ["11111111-1111-4111-8111-111111111111", "Cuci Komplit (Cuci + Setrika)", "Laundry Reguler", "Paket pencucian lengkap termasuk pencucian, pengeringan, dan penyetrikaan pakaian.", 10000, "Kg", "2 Hari", "Droplets", "teal"],
     ["22222222-2222-4222-8222-222222222222", "Setrika Saja", "Laundry Reguler", "Layanan penyetrikaan pakaian.", 7000, "Kg", "1 Hari", "Shirt", "cyan"],
@@ -163,7 +130,6 @@ export const normalizeOrder = (order) => {
 
 export const laundryPortalAPI = {
     async fetchTestimonials() {
-        // Returns approved feedback from orders as testimonials, with fallback
         return this.fetchApprovedTestimonials();
     },
 
@@ -230,7 +196,7 @@ export const laundryPortalAPI = {
                 user_id: userId,
                 rating,
                 comment: comment || null,
-                is_approved: false,
+                is_approved: true,
             };
 
             const response = await axios.post(`${SUPABASE_URL}/feedback`, payload, { headers });
@@ -271,21 +237,27 @@ export const laundryPortalAPI = {
 
     async fetchApprovedTestimonials() {
         try {
-            const query = `${SUPABASE_URL}/feedback?is_approved=eq.true&select=*,profiles!feedback_user_id_fkey(full_name)&order=created_at.desc`;
+            const query = `${SUPABASE_URL}/feedback?select=*,profiles!feedback_user_id_fkey(full_name),orders!feedback_order_id_fkey(service_type,order_items(*,products(name)))&order=created_at.desc`;
             const response = await axios.get(query, { headers });
             if (response.data?.length) {
-                return response.data.map((fb) => ({
-                    id: fb.id,
-                    name: fb.profiles?.full_name || "Pelanggan BrightWash",
-                    rating: fb.rating,
-                    text: fb.comment || "",
-                    created_at: fb.created_at,
-                }));
+                return response.data.map((fb) => {
+                    const order = fb.orders || {};
+                    const firstItem = order.order_items?.[0]?.products;
+                    const serviceName = firstItem?.name || order.service_type || "Layanan BrightWash";
+                    return {
+                        id: fb.id,
+                        name: fb.profiles?.full_name || "Pelanggan BrightWash",
+                        rating: fb.rating,
+                        text: fb.comment || "",
+                        service_name: serviceName,
+                        created_at: fb.created_at,
+                    };
+                });
             }
-            return FALLBACK_TESTIMONIALS;
+            return [];
         } catch (error) {
-            console.warn("Menggunakan fallback testimonial:", error.response?.data || error.message);
-            return FALLBACK_TESTIMONIALS;
+            console.warn("Gagal mengambil testimonial:", error.response?.data || error.message);
+            return [];
         }
     },
 

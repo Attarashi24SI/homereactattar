@@ -4,7 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import laundryPortalAPI from "../../services/laundryPortalAPI";
 import ServiceCard from "../../components/ServiceCard";
 import ServiceCardSkeleton from "../../components/ServiceCardSkeleton";
-import { Star } from "lucide-react";
+import { Star, MessageSquareText } from "lucide-react";
 
 export default function Home() {
     const { isLoggedIn, user, logout } = useAuth();
@@ -22,12 +22,17 @@ export default function Home() {
         });
     }, []);
 
-    useEffect(() => {
-        laundryPortalAPI.fetchTestimonials().then((data) => {
-            setTestimonials(data);
-            setTestimonialsLoading(false);
-        });
+    const fetchTestimonialsData = useCallback(async () => {
+        const data = await laundryPortalAPI.fetchTestimonials();
+        setTestimonials(data);
+        setTestimonialsLoading(false);
     }, []);
+
+    useEffect(() => {
+        fetchTestimonialsData();
+        const interval = setInterval(fetchTestimonialsData, 30000);
+        return () => clearInterval(interval);
+    }, [fetchTestimonialsData]);
 
     // Responsive cards per page
     useEffect(() => {
@@ -373,6 +378,16 @@ export default function Home() {
                             </div>
                         ))}
                     </div>
+                ) : !testimonials.length ? (
+                    <div className="flex flex-col items-center justify-center py-12 text-center">
+                        <MessageSquareText className="mb-4 h-12 w-12 text-slate-300" />
+                        <p className="text-[0.95rem] font-medium text-slate-500">
+                            Belum ada testimonial dari pelanggan.
+                        </p>
+                        <p className="mt-1 text-[0.85rem] text-slate-400">
+                            Testimonial akan muncul setelah pelanggan memberikan ulasan.
+                        </p>
+                    </div>
                 ) : (
                     <div className="relative">
                         {/* Previous arrow */}
@@ -430,6 +445,13 @@ export default function Home() {
                                                 <p className="mb-4 max-w-[320px] flex-1 text-[0.88rem] italic leading-relaxed text-slate-600">
                                                     {testimonial.text}
                                                 </p>
+
+                                                {/* Service Name */}
+                                                {testimonial.service_name && (
+                                                    <p className="mb-2 text-[0.75rem] font-medium text-teal-500">
+                                                        {testimonial.service_name}
+                                                    </p>
+                                                )}
 
                                                 {/* Name */}
                                                 <div className="flex items-center gap-2">
